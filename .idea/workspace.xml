@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="" />
+    <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/calculator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/calculator.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +20,9 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="laravel5" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -110,7 +117,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1RMr2BaOatdFTVUQpM7wOapWfwt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assetssss" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -203,10 +212,26 @@
       <workItem from="1571223323404" duration="45000" />
       <workItem from="1572442869678" duration="2260000" />
       <workItem from="1572498611231" duration="9249000" />
+      <workItem from="1572583046143" duration="1683000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>

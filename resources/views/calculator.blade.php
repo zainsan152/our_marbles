@@ -8,23 +8,7 @@
     <link rel="icon" type="image/png" href="{{asset('images/logo.png')}}"/>
 </head>
 <body>
-<div class="row" style="margin-left: 10px;">
-    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5">
-        <div class="logo">
-            <a href="{{route('home')}}"><img src="{{asset('assetss/images/logo/logo.png')}}" alt="logo images"></a>
-        </div>
-    </div>
-    <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
-        <div class="header__right" style="margin-left: 1000px">
-            <div class="header__account">
-                <a href="{{route('login')}}"><i class="icon-user icons"></i></a>
-            </div>
-            <div class="htc__shopping__cart">
-                <a  href="{{route('cart.all')}}"><i class="icon-handbag icons"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
+
 <br><br>
 <div class="row">
     <div class="col-md-12">
