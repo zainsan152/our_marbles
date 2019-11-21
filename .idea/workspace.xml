@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/download.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CalculatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CalculatorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/calculator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/calculator.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/single.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,20 +130,21 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assetssss" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../authLaravel" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\shopkeeper" />
-      <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp1\htdocs\ourmarbles\public\assets\images" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\assetssss" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\assetss\images\test\client" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\assetss\images\product" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\assetss\images\slider\fornt-img" />
-      <recent name="F:\xampp1\htdocs\ourmarbles\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\xampp1\htdocs\ourmarbles\public" />
+      <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\shopkeeper" />
+      <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -212,7 +222,10 @@
       <workItem from="1571223323404" duration="45000" />
       <workItem from="1572442869678" duration="2260000" />
       <workItem from="1572498611231" duration="9249000" />
-      <workItem from="1572583046143" duration="1683000" />
+      <workItem from="1572583046143" duration="6100000" />
+      <workItem from="1572687396756" duration="39000" />
+      <workItem from="1574076782008" duration="1425000" />
+      <workItem from="1574314035035" duration="5757000" />
     </task>
     <servers />
   </component>
@@ -224,7 +237,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

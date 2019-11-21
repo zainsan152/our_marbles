@@ -19,7 +19,7 @@ Route::get('/calculate' , 'CalculatorController@index')->name('calculate');
 Route::post('/calculate' , 'CalculatorController@predictor')->name('calculate');
 
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 

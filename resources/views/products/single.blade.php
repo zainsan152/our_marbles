@@ -48,7 +48,10 @@
                             <div class="sin__desc">
                                 <p><span>Availability:</span> In Stock</p>
                             </div>
-                            <a href="{{route('products.addToCart' , $product)}}"> Add to Cart</a>
+                            <div class="cr__btn" >
+                                <a href="{{route('products.addToCart' , $product)}}"  style="background-color: #c2a476;"> Add to Cart</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>

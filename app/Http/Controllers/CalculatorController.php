@@ -44,6 +44,7 @@ class CalculatorController extends Controller
         else{
             $result = 0;
         }
-        return redirect('/calculate')->with('info' , 'Your answer is : '.$result);
+        return redirect('/calculate')->with('info' , 'You need '.$result.' pieces');
     }
+
 }

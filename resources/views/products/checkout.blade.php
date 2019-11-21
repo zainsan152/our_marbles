@@ -104,6 +104,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Paypal checkout</button>
+                </div>
             </form>
         </div>
     </div>
@@ -139,7 +142,6 @@
                 @endforeach
         </div>
     </div>
-
 </div>
 
 @include('partials.js')

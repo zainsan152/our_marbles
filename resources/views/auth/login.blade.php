@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
     <!--===============================================================================================-->
 </head>
-<body>
+<body background="{{url('download.jpg')}}">
 
 <div class="limiter">
     <div class="container-login100">
