@@ -23,46 +23,42 @@
                      with font-awesome or any other icon font library -->
                 <li class="nav-item has-treeview menu-open">
                     <a href="#" class="nav-link active">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        {{--<i class="nav-icon fas fa-tachometer-alt"></i>--}}
                         <p>
                             Dashboard
-                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                 </li>
-                <li class="nav-item has-treeview menu-open">
-                    <a href="{{route('shopkeeper.logout')}}" class="nav-link active">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Logout
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item has-treeview menu-open">
-                    <a href="{{route('shopkeeper.password.change')}}" class="nav-link active">
-                        <i class="fa fa-btn fa-user"></i>
-                        <p>
-                            Change Password
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                </li>
+
                 <li class="nav-item has-treeview menu-open">
                     <a href="{{route('category.index')}}" class="nav-link active">
-                        <i class="fa fa-btn fa-user"></i>
+                        {{--<i class="fa fa-btn fa-user"></i>--}}
                         <p>
                             Categories
-                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                 </li>
                 <li class="nav-item has-treeview menu-open">
                     <a href="{{route('product.index')}}" class="nav-link active">
-                        <i class="fa fa-btn fa-user"></i>
+                       {{-- <i class="fa fa-btn fa-product-hunt"></i>--}}
                         <p>
                             Products
-                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item has-treeview menu-open">
+                    <a href="{{route('shopkeeper.password.change')}}" class="nav-link active">
+                       {{-- <i class="fa fa-btn fa-user"></i>--}}
+                        <p>
+                            Change Password
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item has-treeview menu-open">
+                    <a href="{{route('shopkeeper.logout')}}" class="nav-link active">
+                       {{-- <i class="nav-icon fas fa-tachometer-alt"></i>--}}
+                        <p>
+                            Logout
                         </p>
                     </a>
                 </li>

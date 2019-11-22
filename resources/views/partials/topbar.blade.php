@@ -14,19 +14,23 @@
                             <li class="drop"><a href="{{route('products.all')}}">Products</a></li>
                             <li class="drop"><a href="{{route('cart.all')}}">Cart</a></li>
                             <li class="drop"><a href="{{route('calculate')}}">Predictor</a></li>
-                            <li class="drop"><a href="#">Contact Us</a></li>
+                            <li class="drop"><a href="{{route('contact')}}">Contact Us</a></li>
                             <li class="drop"><a href="#">About Us</a></li>
-                            <li class="drop"><a href="#">Our Shops</a></li>
+                           {{-- <li class="drop"><a href="#">Our Shops</a></li>--}}
                         </ul>
                     </nav>
                 </div>
                 <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
+
                     <div class="header__right">
                         <div class="header__account">
-                            <a href="{{route('login')}}"><i class="icon-user icons"></i></a>
+                            <a href="{{route('login')}}"><img src="{{asset(Auth::user()->avatar)}}" style="height: 40px; width: 40px; border-radius: 50%;"></a>
+                        </div>
+                        <div class="header__account">
+                            <a href="{{route('user.logout')}}"><i class="fa fa-sign-out"></i></a>
                         </div>
                         <div class="htc__shopping__cart">
-                            <a  href="{{route('cart.all')}}"><i class="icon-handbag icons"></i></a>
+                            <a href="{{route('cart.all')}}"><i class="icon-handbag icons"></i></a>
                         </div>
                     </div>
                 </div>

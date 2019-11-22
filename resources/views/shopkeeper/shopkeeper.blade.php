@@ -72,6 +72,7 @@
             </div><!-- /.container-fluid -->
         </div>
     </div>
+
     <!-- /.content-wrapper -->
     <footer class="main-footer">
         <strong>Copyright &copy; 2019 <a href=#>ourmarbles.com</a>.</strong>

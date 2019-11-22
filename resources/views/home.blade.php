@@ -79,13 +79,10 @@
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                         <div class="category">
                             <div class="ht__cat__thumb">
-                                <a href="#">
                                     <img src="{{asset('uploads/'.$product->thumbnail)}}" style="height: 300px; width: 300px;" alt="product images">
-                                </a>
                             </div>
-
                             <div class="fr__product__inner">
-                                <h4><a href="#">{{$product -> title}} </a></h4>
+                                <h4>{{$product -> title}}</h4>
                                 <ul class="fr__pro__prize">
                                     <li>Rs {{$product->price}}</li>
                                 </ul>
@@ -115,13 +112,11 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="#">
-                                <img src="{{asset('assetss/images/product/a.jpg')}}" alt="product images">
-                            </a>
+                            <img src="{{asset('assetss/images/product/a.jpg')}}" alt="product images">
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="#">Marseilees Chablis Ceramic Tile
-                                </a></h4>
+                            <h4>Marseilees Chablis Ceramic Tile
+                                </h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize"> Rs30</li>
                                 <li>Rs 25</li>
@@ -134,12 +129,12 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="#">
+
                                 <img src="{{asset('assetss/images/product/s.jpg')}}" alt="product images">
-                            </a>
+
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="#">Magic Gel Onyx MArbles</a></h4>
+                            <h4>Magic Gel Onyx MArbles</h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize"> Rs30</li>
                                 <li>Rs 25</li>
@@ -152,12 +147,10 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="#">
                                 <img src="{{asset('assetss/images/product/d.jpg')}}" alt="product images">
-                            </a>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="#">Bronx</a></h4>
+                            <h4>Bronx</h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize"> Rs30</li>
                                 <li>Rs 25</li>
@@ -170,12 +163,10 @@
                 <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                     <div class="category">
                         <div class="ht__cat__thumb">
-                            <a href="#">
                                 <img src="{{asset('assetss/images/product/f.jpg')}}" alt="product images">
-                            </a>
                         </div>
                         <div class="fr__product__inner">
-                            <h4><a href="#">Polished Marble Tiles </a></h4>
+                            <h4>Polished Marble Tiles </h4>
                             <ul class="fr__pro__prize">
                                 <li class="old__prize"> Rs30</li>
                                 <li>Rs 25</li>
@@ -200,7 +191,7 @@
                                     style="height: 89px; width: 89px;">
                                 </div>
                                 <div class="testimonial__details">
-                                    <h4><a href="#" tabindex="-1">Zain Ul Abideen</a></h4>
+                                    <h4>Zain Ul Abideen</h4>
                                     <p>I’m up to something. Stay focused. The weather is amazing, walk with me through the pathway of more success. </p>
                                 </div>
                             </div>
@@ -222,7 +213,7 @@
                                          style="height: 89px; width: 89px;">
                                 </div>
                                 <div class="testimonial__details">
-                                    <h4><a href="#" tabindex="-1">Fahad Sattar</a></h4>
+                                    <h4>Fahad Sattar</h4>
                                     <p>I’m up to something. Stay focused. The weather is amazing, walk with me through the pathway of more success. </p>
                                 </div>
                             </div>

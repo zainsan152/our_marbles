@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::get('/calculate' , 'CalculatorController@index')->name('calculate');
 Route::post('/calculate' , 'CalculatorController@predictor')->name('calculate');
 
+Route::get('/contact' , 'ContactController@index')->name('contact');
+
 
 Auth::routes(['verify' => true]);
 
@@ -99,5 +101,6 @@ Route::prefix('shopkeeper')->group(function()
 
     Route::resource('category' , 'CategoryController');
     Route::resource('product' , 'ProductController');
+    Route::resource('contact' , 'ContactController');
 });
 

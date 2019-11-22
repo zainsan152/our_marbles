@@ -70,21 +70,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="card col-sm-12 p-0 mb-2">
-                        <div class="card-header align-items-center">
-                            <h5 class="card-title float-left">Extra Options</h5>
-                            <div class="float-right" >
-                                <button type="button" id="btn-add" class="btn btn-primary btn-sm">+</button>
-                                <button type="button" id="btn-remove" class="btn btn-danger btn-sm">-</button>
-                            </div>
-
-                        </div>
-                        <div class="card-body" id="extras">
-
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col-lg-3">
                 <ul class="list-group row">
