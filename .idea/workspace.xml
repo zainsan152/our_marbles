@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/app/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_21_100549_create_profiles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/1574405710.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/AdminUser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/topbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/partials/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/shopkeeper.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/shopkeeper.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +221,8 @@
       <workItem from="1574076782008" duration="1425000" />
       <workItem from="1574314035035" duration="5757000" />
       <workItem from="1574327400255" duration="4956000" />
-      <workItem from="1574397343606" duration="9845000" />
+      <workItem from="1574397343606" duration="14231000" />
+      <workItem from="1574486084921" duration="9794000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1574335760150</created>

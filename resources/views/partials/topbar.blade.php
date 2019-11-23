@@ -23,14 +23,19 @@
                 <div class="col-md-3 col-lg-2 col-sm-4 col-xs-4">
 
                     <div class="header__right">
+
                         <div class="header__account">
                             <a href="{{route('login')}}"><img src="{{asset(Auth::user()->avatar)}}" style="height: 40px; width: 40px; border-radius: 50%;"></a>
                         </div>
-                        <div class="header__account">
-                            <a href="{{route('user.logout')}}"><i class="fa fa-sign-out"></i></a>
-                        </div>
                         <div class="htc__shopping__cart">
                             <a href="{{route('cart.all')}}"><i class="icon-handbag icons"></i></a>
+                        </div>
+                        <div class="btn-group" style="margin-left: 9px;">
+                            <button type = "button" class = "btn dropdown-toggle" data-toggle = "dropdown">{{Auth::user()->name}}<span class="caret"></span></button>
+                            <ul class = "dropdown-menu" role = "menu">
+                                <li><a href="{{route('user.logout')}}"><i class="fa fa-sign-out">Logout</i></a></li>
+                                <li><a href="{{route('password.change')}}"><i class="fa fa-repeat">Change Password</i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
