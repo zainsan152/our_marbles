@@ -15,7 +15,7 @@
                             <li class="drop"><a href="{{route('cart.all')}}">Cart</a></li>
                             <li class="drop"><a href="{{route('calculate')}}">Predictor</a></li>
                             <li class="drop"><a href="{{route('contact')}}">Contact Us</a></li>
-                            <li class="drop"><a href="#">About Us</a></li>
+                            <li class="drop"><a href="{{route('about')}}">About Us</a></li>
                            {{-- <li class="drop"><a href="#">Our Shops</a></li>--}}
                         </ul>
                     </nav>

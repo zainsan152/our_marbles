@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\cr;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\SendMail;
 
-class ContactController extends Controller
+class AboutController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function __construct()
     {
         $this->middleware('auth');
@@ -20,26 +24,7 @@ class ContactController extends Controller
     public function index()
     {
         //
-        return view('contact');
-    }
-
-    function send(Request $request)
-    {
-        $this->validate($request, [
-            'name'     =>  'required',
-            'email'  =>  'required|email',
-            'message' =>  'required'
-        ]);
-
-        $data = array(
-            'name'      =>  $request->name,
-            'email'     =>  $request->email,
-            'message'   =>   $request->message
-        );
-
-        Mail::to('info@ourmarbles.com')->send(new SendMail($data));
-        return back()->with('success', 'Thanks for contacting us!');
-
+        return view('about');
     }
 
     /**
@@ -66,10 +51,10 @@ class ContactController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\cr  $cr
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(cr $cr)
     {
         //
     }
@@ -77,10 +62,10 @@ class ContactController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\cr  $cr
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(cr $cr)
     {
         //
     }
@@ -89,10 +74,10 @@ class ContactController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\cr  $cr
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, cr $cr)
     {
         //
     }
@@ -100,10 +85,10 @@ class ContactController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\cr  $cr
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(cr $cr)
     {
         //
     }

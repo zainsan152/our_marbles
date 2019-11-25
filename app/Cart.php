@@ -54,7 +54,7 @@ class Cart
                 $products = $this->contents[$product->id];
             }
         }
-        $this ->totalQty -= $products['qty'];
+        $this->totalQty -= $products['qty'];
         $this->totalPrice -= $products['price'];
         $products['qty'] = $qty;
         $products['price'] = $product->price * $qty;

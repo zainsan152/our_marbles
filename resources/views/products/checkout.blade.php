@@ -104,9 +104,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                {{--<div class="row">
                     <button class="btn btn-primary btn-lg btn-block" type="submit">Paypal checkout</button>
-                </div>
+                </div>--}}
             </form>
         </div>
     </div>

@@ -19,6 +19,9 @@ Route::get('/calculate' , 'CalculatorController@index')->name('calculate');
 Route::post('/calculate' , 'CalculatorController@predictor')->name('calculate');
 
 Route::get('/contact' , 'ContactController@index')->name('contact');
+Route::post('/contact/send', 'ContactController@send');
+
+Route::get('/about' , 'AboutController@index')->name('about');
 
 
 Auth::routes(['verify' => true]);
@@ -102,5 +105,6 @@ Route::prefix('shopkeeper')->group(function()
     Route::resource('category' , 'CategoryController');
     Route::resource('product' , 'ProductController');
     Route::resource('contact' , 'ContactController');
+    Route::resource('about' , 'AboutController');
 });
 
