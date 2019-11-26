@@ -15,6 +15,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/form', function () {
+    return view('form');
+});
+
+Route::post('submitForm','UserDetailController@store');
+
+Route::get('/index','UserDetailController@index');
+
+Route::get('/downloadPDF/{id}','UserDetailController@downloadPDF');
+
+Route::get('/live_search', 'LiveSearch@index')->name('live_search');;
+Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
+
+
 Route::get('/calculate' , 'CalculatorController@index')->name('calculate');
 Route::post('/calculate' , 'CalculatorController@predictor')->name('calculate');
 

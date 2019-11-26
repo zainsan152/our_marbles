@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/app/About.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AboutController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mail/SendMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dynamic_email_template.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LiveSearch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserDetailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/UserDetail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_25_113535_create_user_details_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/live_search.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pdf.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/topbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,6 +128,11 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RMr2BaOatdFTVUQpM7wOapWfwt" />
@@ -232,7 +242,8 @@
       <workItem from="1574327400255" duration="4956000" />
       <workItem from="1574397343606" duration="14231000" />
       <workItem from="1574486084921" duration="12302000" />
-      <workItem from="1574659114616" duration="12186000" />
+      <workItem from="1574659114616" duration="15622000" />
+      <workItem from="1574742264262" duration="6686000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1574335760150</created>

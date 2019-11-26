@@ -16,7 +16,7 @@
                             <li class="drop"><a href="{{route('calculate')}}">Predictor</a></li>
                             <li class="drop"><a href="{{route('contact')}}">Contact Us</a></li>
                             <li class="drop"><a href="{{route('about')}}">About Us</a></li>
-                           {{-- <li class="drop"><a href="#">Our Shops</a></li>--}}
+                            <li class="drop"><a href="{{route('live_search')}}">Search</a></li>
                         </ul>
                     </nav>
                 </div>
