@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Live search in laravel using AJAX</title>
+    <link rel="icon" type="image/png" href="{{asset('images/logo.png')}}"/>
+    <title>Our Marbles</title>
     @include('partials.css')
 </head>
 <body>

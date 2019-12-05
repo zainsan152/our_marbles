@@ -79,6 +79,11 @@
                         </span>
                     <input class="form-control @error('password') is-invalid @enderror" type="password" name="password_confirmation"  placeholder="Confirm Password"  id="password-confirm" >
                     <span class="focus-input100"></span>
+                    @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
 
                 </div>
                 <div class="row">

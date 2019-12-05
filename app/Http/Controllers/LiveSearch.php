@@ -2,14 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use Illuminate\Http\Request;
 use DB;
 
 class LiveSearch extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     function index()
     {
-        return view('live_search');
+        $products = Product::paginate(5);
+        return view('live_search' , compact('products'));
     }
 
     function action(Request $request)

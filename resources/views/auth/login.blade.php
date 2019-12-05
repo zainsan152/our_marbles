@@ -43,6 +43,11 @@
                 <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter email: ex@abc.xyz">
                     <input class="form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="Email"  value="{{ old('email') }}">
                     <span class="focus-input100"></span>
+                    @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
                 </div>
 
                 <div class="wrap-input100 validate-input m-b-20" data-validate = "Please enter password">
@@ -53,8 +58,8 @@
                     <span class="focus-input100"></span>
                     @error('password')
                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                        <strong>{{ $message }}</strong>
+                    </span>
                     @enderror
                 </div>
 
