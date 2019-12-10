@@ -43,6 +43,10 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('checkout' , 'OrderController');
+Route::get('checkout' , 'OrderController@index')->name('checkout');
+Route::post('charge', 'OrderController@charge');
+Route::get('paymentsuccess', 'OrderController@payment_success');
+Route::get('paymenterror', 'OrderController@payment_error');
 
 Route::group(['as' => 'products.' , 'prefix' => 'products'], function ()
 {

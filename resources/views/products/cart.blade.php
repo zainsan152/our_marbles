@@ -71,7 +71,7 @@
                                     <a href="{{route('products.all')}}">Continue Shopping</a>
                                 </div>
                                 <div class="buttons-cart checkout--btn">
-                                    <a href="#">checkout</a>
+                                    <a href="{{route('checkout')}}">checkout</a>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                     <span>Rs {{$cart->getTotalPrice()}}</span>
                                 </div>
                                 <ul class="payment__btn">
-                                    <li class="active"><a href="#">payment</a></li>
+                                    <li class="active"><a href="{{route('checkout')}}">payment</a></li>
                                     <li><a href="{{route('products.all')}}">continue shopping</a></li>
                                 </ul>
                             </div>

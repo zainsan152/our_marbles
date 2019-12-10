@@ -20,6 +20,7 @@ class OrderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         //
@@ -92,7 +93,7 @@ class OrderController extends Controller
                 'user_id' => $checkout->id,
                 'product_id' => $product['product']->id,
                 'qty' => $product['qty'],
-                'status' => 'Pending',
+                'status' => 'delivered',
                 'price' => $product['price'],
                 'payment_id' => 0,
             ];

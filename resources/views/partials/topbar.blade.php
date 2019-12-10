@@ -17,7 +17,11 @@
                                     <li><a href="{{route('live_search')}}">Search Products</a></li>
                                 </ul>
                             </li>
-                            <li class="drop"><a href="{{route('cart.all')}}">Cart</a></li>
+                            <li class="drop"><a href="{{route('cart.all')}}">Cart</a>
+                                <ul class="dropdown">
+                                    <li><a href="{{route('checkout')}}">Checkout</a></li>
+                                </ul>
+                            </li>
                             <li class="drop"><a href="{{route('calculate')}}">Predictor</a></li>
                             <li class="drop"><a href="{{route('contact')}}">Contact Us</a></li>
                             <li class="drop"><a href="{{route('about')}}">About Us</a></li>
