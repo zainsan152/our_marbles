@@ -28,79 +28,77 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
     <!--===============================================================================================-->
 </head>
-<body background="{{url('download.jpg')}}">
-
 <div class="limiter">
     <div class="container-login100">
-        <div class="wrap-login100 p-t-90 p-b-30">
-            <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
+        <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+            <form class="login100-form validate-form flex-sb flex-w" method="POST" action="{{ route('password.email') }}">
                 @csrf
-                <span class="login100-form-title p-b-40">
-						Login
+					<span class="login100-form-title p-b-32">
+            Account Login
+            </span>
+
+            <span class="txt1 p-b-11">
+						Email
 					</span>
+            <div class="wrap-input100 validate-input m-b-36 " data-validate = "Please enter email: ex@abc.xyz">
+                <input class="input100 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" >
+						<span class="focus-input100"></span>
+                @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+                @enderror
+            </div>
 
-
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter email: ex@abc.xyz">
-                    <input class="form-control @error('email') is-invalid @enderror" type="email" name="email" placeholder="Email"  value="{{ old('email') }}">
-                    <span class="focus-input100"></span>
-                    @error('email')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                </div>
-
-                <div class="wrap-input100 validate-input m-b-20" data-validate = "Please enter password">
+            <span class="txt1 p-b-11">
+						Password
+					</span>
+            <div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
 						<span class="btn-show-pass">
-							<i class="fa fa fa-eye"></i>
+							<i class="fa fa-eye"></i>
 						</span>
-                    <input class="form-control @error('password') is-invalid @enderror" type="password" name="password" placeholder="Password">
-                    <span class="focus-input100"></span>
-                    @error('password')
-                    <span class="invalid-feedback" role="alert">
-                        <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                </div>
+                <input class="input100 @error('password') is-invalid @enderror" type="password" name="password" >
+                <span class="focus-input100"></span>
+                @error('password')
+                <span class="invalid-feedback" role="alert">
+							<strong>{{ $message }}</strong>
+						</span>
+                @enderror
+            </div>
 
-                <div class="container-login100-form-btn">
-                    <button class="login100-form-btn">
-                        {{ __('Login') }}
-                    </button>
-                </div>
-                    <div class="row">
-                        <div class="col-md-2 align-items-center" style="  margin-left: 83px;" >
+            <div class="flex-sb-m w-full p-b-48">
+                <div>
                     @if (Route::has('password.request'))
-                        <a class="btn btn-link" href="{{ route('password.request') }}">
-                            {{ __('Forgot Your Password?') }}
+                        <a href="{{ route('password.request') }}" class="txt3">
+                            <b> Forgot Password?</b>
                         </a>
                     @endif
-                        </div>
                 </div>
+                <a href="{{ route('register') }}" class="txt3 bo1 hov1">
+                    <b>Sign up now</b>
+                </a>
+            </div>
 
-                <div class="flex-col-c p-t-224">
-						<span class="txt2 p-b-10">
+
+            <div class="container-login100-form-btn">
+                <button class="login100-form-btn">
+                    {{ __('Login') }}
+                </button>
+            </div>
+            {{--div class="flex-col-c p-t-224">
+            <span class="txt2 p-b-10">
 							Don’t have an account?
 						</span>
 
-                    <a href="{{ route('register') }}" class="txt3 bo1 hov1">
-                        Sign up now
-                    </a>
-                </div>
+            <a href="{{ route('register') }}" class="txt3 bo1 hov1">
+                Sign up now
+            </a>
+        </div>--}}
 
-            </form>
-            <div class="row">
-                <div class="col-md-12">
-                    @if(session('Success'))
-                        <div class="alert alert-success">
-                            {{session('Success')}}
-                        </div>
-                    @endif
-                </div>
 
-            </div>
-        </div>
+        </form>
     </div>
+</div>
 </div>
 
 
