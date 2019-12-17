@@ -2,35 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/fonts/raleway/Raleway-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/util.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/manageCustomersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/managerOrdersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/M8Iznn3eIyjXAWxD3W7803w9GX2Y7DpFeSrjQp2p.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shopkeeper/customer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shopkeeper/order.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/admin-login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/admin-login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_10_092339_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_10_092339_create_orders_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/shopkeeper-login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/shopkeeper-login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/shopkeeper-register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/shopkeeper-register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/shopkeeper.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/shopkeeper.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,17 +158,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\xampp1\htdocs\ourmarbles\public" />
+      <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\shopkeeper" />
+      <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\xampp1\htdocs\ourmarbles" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\assets\fonts" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\js" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\css" />
       <recent name="F:\xampp1\htdocs\ourmarbles\braintree_php_example" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\xampp1\htdocs\ourmarbles\public" />
-      <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\shopkeeper" />
-      <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\admin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -284,6 +269,8 @@
       <workItem from="1576304811784" duration="329000" />
       <workItem from="1576492546925" duration="4347000" />
       <workItem from="1576517156658" duration="3142000" />
+      <workItem from="1576557275711" duration="195000" />
+      <workItem from="1576559371946" duration="7243000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1574335760150</created>

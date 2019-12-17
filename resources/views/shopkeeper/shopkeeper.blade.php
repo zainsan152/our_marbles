@@ -62,6 +62,17 @@
                     <div class="col-sm-6">
                         <h1 class="m-0 text-dark">Shopkeeper Dashboard</h1>
                     </div><!-- /.col -->
+                    @section('content')
+                        <div class="row d-block">
+                            <div class="col-sm-12">
+                                @if (session()->has('message'))
+                                    <div class="alert alert-success">
+                                        {{session('message')}}
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>

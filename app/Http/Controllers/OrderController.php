@@ -92,6 +92,7 @@ class OrderController extends Controller
             $products = [
                 'user_id' => $checkout->id,
                 'product_id' => $product['product']->id,
+                'title' => $product['product']->title,
                 'qty' => $product['qty'],
                 'status' => 'delivered',
                 'price' => $product['price'],

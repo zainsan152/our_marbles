@@ -120,6 +120,12 @@ Route::prefix('shopkeeper')->group(function()
     Route::post('/password/reset' , 'Auth\ShopkeeperForgotPasswordController@reset');
     Route::get('/password/reset/{token}' , 'Auth\ShopkeeperForgotPasswordController@showResetForm')->name('shopkeeper.password.reset');
 
+    Route::get('/orders', 'managerOrdersController@index')->name('shopkeeper.order');
+
+
+    Route::get('/customers', 'manageCustomersController@index')->name('shopkeeper.customer');
+
+
     Route::resource('category' , 'CategoryController');
     Route::resource('product' , 'ProductController');
     Route::resource('contact' , 'ContactController');

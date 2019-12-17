@@ -55,6 +55,24 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview menu-open">
+                    <a href="{{route('shopkeeper.customer')}}" class="nav-link active">
+                        {{-- <i class="fa fa-btn fa-user"></i>--}}
+                        <p>
+                            Customers
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item has-treeview menu-open">
+                    <a href="{{route('shopkeeper.order')}}" class="nav-link active">
+                        {{-- <i class="fa fa-btn fa-user"></i>--}}
+                        <p>
+                            Orders
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item has-treeview menu-open">
                     <a href="{{route('shopkeeper.logout')}}" class="nav-link active">
                        {{-- <i class="nav-icon fas fa-tachometer-alt"></i>--}}
                         <p>

@@ -247,7 +247,7 @@
 
 
 
-               {{-- <button class="btn btn-primary btn-lg btn-block" type="submit">Checkout</button>--}}
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Checkout</button>
             </form>
         </div>
     </div>
