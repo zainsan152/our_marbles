@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/manageCustomersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/managerOrdersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/M8Iznn3eIyjXAWxD3W7803w9GX2Y7DpFeSrjQp2p.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/shopkeeper/customer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/shopkeeper/order.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ManageAccountsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_18_064950_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/Saccounts.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/accounts.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_10_092339_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_10_092339_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/partials/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/shopkeeper.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/shopkeeper.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Shopkeeper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Shopkeeper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_26_105958_create_shopkeepers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_26_105958_create_shopkeepers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_21_100549_create_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_18_065047_create_profiles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AdminUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -271,6 +276,8 @@
       <workItem from="1576517156658" duration="3142000" />
       <workItem from="1576557275711" duration="195000" />
       <workItem from="1576559371946" duration="7243000" />
+      <workItem from="1576574290941" duration="1167000" />
+      <workItem from="1576651230771" duration="6891000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1574335760150</created>

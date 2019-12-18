@@ -86,6 +86,10 @@ Route::prefix('admin')->group(function()
     Route::get('/password/reset' , 'Auth\AdminForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
     Route::post('/password/reset' , 'Auth\AdminForgotPasswordController@reset');
     Route::get('/password/reset/{token}' , 'Auth\AdminForgotPasswordController@showResetForm')->name('admin.password.reset');
+
+    Route::get('/users', 'manageAccountsController@index')->name('admin.accounts');
+
+    Route::get('/shop_user', 'manageAccountsController@Sindex')->name('admin.Saccounts');
 });
 
 Route::prefix('shopkeeper')->group(function()

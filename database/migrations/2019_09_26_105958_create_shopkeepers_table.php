@@ -15,7 +15,8 @@ class CreateShopkeepersTable extends Migration
     {
         Schema::create('shopkeepers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->unsignedInteger('role_id')->default(1);
+            $table->string('name')->default("shopkeeper");
             $table->string('email')->unique();
             $table->string('avatar')->default('/images/4.png');
             $table->timestamp('email_verified_at')->nullable();
