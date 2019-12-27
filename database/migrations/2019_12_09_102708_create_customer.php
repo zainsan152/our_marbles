@@ -13,16 +13,17 @@ class CreateCustomer extends Migration
      */
     public function up()
     {
-        Schema::create('customer', function (Blueprint $table) {
+        Schema::create('customers', function (Blueprint $table) {
             $table->increments('id');
             $table->string("billing_firstName");
-            $table->string("billing_lastName");
-            $table->string("username");
+           // $table->string("billing_lastName");
+            //$table->string("username");
             $table->string("email");
             $table->string("billing_address1");
             $table->string("billing_address2");
             $table->string("billing_country");
             $table->string("billing_state");
+            $table->string("billing_city");
             $table->string("billing_zip");
             $table->timestamps();
             $table->softDeletes();
@@ -36,6 +37,6 @@ class CreateCustomer extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customer');
+        Schema::dropIfExists('customers');
     }
 }

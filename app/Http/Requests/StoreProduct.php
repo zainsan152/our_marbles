@@ -26,9 +26,9 @@ class StoreProduct extends FormRequest
         return [
             //
             'title'=>'required',
-            'description'=>'required',
+            'shopkeeper'=>'required',
             'thumbnail'=>'required|mimes:jpeg,bmp,png|max:2048',
-            'status'=>'required|numeric',
+            //'status'=>'required|numeric',
             'category_id'=>'required',
             'price'=>'required|numeric'
         ];

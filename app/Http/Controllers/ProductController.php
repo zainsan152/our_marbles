@@ -67,7 +67,7 @@ class ProductController extends Controller
         $product = Product::create([
 
             'title'=>$request->title,
-            'description'=>$request->description,
+            'shopkeeper'=>$request->shopkeeper,
             'thumbnail'=>$path,
             'status'=>$request->status,
             'options' => isset($request->extras) ? json_encode($request->extras) : null,
@@ -128,7 +128,7 @@ class ProductController extends Controller
         }
         $product->title =$request->title;
         //$product->slug = $request->slug;
-        $product->description = $request->description;
+        $product->shopkeeper = $request->shopkeeper;
         $product->status = $request->status;
         $product->featured = ($request->featured) ? $request->featured : 0;
         $product->price = $request->price;

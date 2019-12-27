@@ -11,7 +11,7 @@ class LiveSearch extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+       // $this->middleware('auth');
     }
 
     function index()
@@ -31,13 +31,14 @@ class LiveSearch extends Controller
                 $data = DB::table('products')
                     ->where('title', 'like', '%'.$query.'%')
                     ->orWhere('price', 'like', '%'.$query.'%')
+                    ->orWhere('shopkeeper', 'like', '%'.$query.'%')
                     ->get();
 
             }
             else
             {
                 $data = DB::table('products')
-                    ->orderBy('id', 'desc')
+                    ->orderBy('id', 'asc')
                     ->get();
             }
             $total_row = $data->count();
@@ -50,6 +51,7 @@ class LiveSearch extends Controller
          <td>'.$row->id.'</td>
          <td>'.$row->title.'</td>
          <td>'.$row->price.'</td>
+         <td>'.$row->shopkeeper.'</td>
         </tr>
         ';
                 }

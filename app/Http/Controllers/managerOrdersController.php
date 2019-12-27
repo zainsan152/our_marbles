@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
 use App\Order;
-use App\Customer;
 use Illuminate\Http\Request;
 
 class managerOrdersController extends Controller
 {
-    //
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function __construct()
     {
         $this->middleware('auth:shopkeeper');
@@ -21,14 +23,72 @@ class managerOrdersController extends Controller
         return view('shopkeeper.order', compact('orders'));
     }
 
-    public function remove(Order $order)
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
     {
         //
-        if ($order->delete())
-        {
-            return back()->with('message' ,'Order Trashed Successfully');
-        }
-        else
-            return back()->with('message' ,'Error Deleting');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $order = Order::findorfail($id);
+        $order->forceDelete();
+
+        return back()->with('success', 'Order deleted!');
     }
 }

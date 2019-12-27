@@ -26,13 +26,14 @@ class StoreOrder extends FormRequest
         return [
             //
             "billing_firstName" => 'required',
-            "billing_lastName" => 'required',
-            "username"=> 'required',
+            //"billing_lastName" => 'required',
+            //"username"=> 'required',
             "email"=> 'required',
             "billing_address1" => 'required',
             "billing_address2"=> 'required',
             "billing_country" => 'required',
             "billing_state" => 'required',
+            "billing_city" => 'required',
             "billing_zip"=> 'required',
         ];
     }

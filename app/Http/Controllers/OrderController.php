@@ -63,26 +63,28 @@ class OrderController extends Controller
         if ($request->shipping_address) {
             $customer = [
                 "billing_firstName" => $request->billing_firstName,
-                "billing_lastName" => $request->billing_lastName,
-                'username' => $request->username,
+               // "billing_lastName" => $request->billing_lastName,
+                // 'username' => $request->username,
                 "email" => $request->email,
                 "billing_address1" => $request->billing_address1,
                 "billing_address2" => $request->billing_address2,
                 "billing_country" => $request->billing_country,
                 "billing_state" => $request->billing_state,
+                "billing_city" => $request->billing_city,
                 "billing_zip" => $request->billing_zip,
             ];
         }else
         {
             $customer = [
                 "billing_firstName" => $request->billing_firstName,
-                "billing_lastName" => $request->billing_lastName,
-                "username" => $request->username,
+               // "billing_lastName" => $request->billing_lastName,
+                //"username" => $request->username,
                 "email" => $request->email,
                 "billing_address1" => $request->billing_address1,
                 "billing_address2" => $request->billing_address2,
                 "billing_country" => $request->billing_country,
                 "billing_state" => $request->billing_state,
+                "billing_city" => $request->billing_city,
                 "billing_zip" => $request->billing_zip,
             ];
         }
@@ -94,7 +96,7 @@ class OrderController extends Controller
                 'product_id' => $product['product']->id,
                 'title' => $product['product']->title,
                 'qty' => $product['qty'],
-                'status' => 'delivered',
+                'status' => 'pending',
                 'price' => $product['price'],
                 'payment_id' => 0,
             ];
@@ -116,6 +118,7 @@ class OrderController extends Controller
 
 
     }
+
 
     /**
      * Display the specified resource.

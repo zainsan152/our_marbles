@@ -19,6 +19,8 @@ Route::get('/form', function () {
     return view('form');
 });
 
+
+
 Route::post('submitForm','UserDetailController@store');
 
 Route::get('/index','UserDetailController@index');
@@ -38,15 +40,21 @@ Route::post('/contact/send', 'ContactController@send');
 Route::get('/about' , 'AboutController@index')->name('about');
 
 
+
+
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('checkout' , 'OrderController');
 Route::get('checkout' , 'OrderController@index')->name('checkout');
-Route::post('charge', 'OrderController@charge');
+
+/*Route::get('/dropdownlist','OrderController@getCountryList');
+Route::get('/get-state-list','OrderController@getStateList');
+Route::get('/get-city-list','OrderController@getCityList');*/
+/*Route::post('charge', 'OrderController@charge');
 Route::get('paymentsuccess', 'OrderController@payment_success');
-Route::get('paymenterror', 'OrderController@payment_error');
+Route::get('paymenterror', 'OrderController@payment_error');*/
 
 Route::group(['as' => 'products.' , 'prefix' => 'products'], function ()
 {
@@ -89,7 +97,7 @@ Route::prefix('admin')->group(function()
 
     Route::get('/users', 'manageAccountsController@index')->name('admin.accounts');
 
-    Route::get('/shop_user', 'manageAccountsController@Sindex')->name('admin.Saccounts');
+    Route::get('/shop_user', 'manageShopkeeperController@index')->name('admin.Saccounts');
 });
 
 Route::prefix('shopkeeper')->group(function()
@@ -124,15 +132,19 @@ Route::prefix('shopkeeper')->group(function()
     Route::post('/password/reset' , 'Auth\ShopkeeperForgotPasswordController@reset');
     Route::get('/password/reset/{token}' , 'Auth\ShopkeeperForgotPasswordController@showResetForm')->name('shopkeeper.password.reset');
 
-    Route::get('/orders', 'managerOrdersController@index')->name('shopkeeper.order');
+    //Route::get('/orders', 'managerOrdersController@index')->name('shopkeeper.order');
 
 
-    Route::get('/customers', 'manageCustomersController@index')->name('shopkeeper.customer');
+   // Route::get('/customers', 'manageCustomersController@index')->name('shopkeeper.customer');
 
 
     Route::resource('category' , 'CategoryController');
     Route::resource('product' , 'ProductController');
     Route::resource('contact' , 'ContactController');
     Route::resource('about' , 'AboutController');
+    Route::resource('customers' , 'manageCustomersController');
+    Route::resource('orders' , 'managerOrdersController');
+    Route::resource('users' , 'manageAccountsController');
+    Route::resource('shopkeepers' , 'manageShopkeeperController');
 });
 

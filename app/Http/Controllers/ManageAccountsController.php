@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Customer;
+use App\Order;
 use App\Shopkeeper;
 use Illuminate\Http\Request;
 use App\User;
@@ -24,6 +25,16 @@ class ManageAccountsController extends Controller
         //
         $users = User::all();
         return view('admin.accounts', compact('users'));
+    }
+
+    public function activateUser()
+    {
+
+    }
+
+    public function deactivateUser()
+    {
+
     }
 
     public function Sindex()
@@ -97,5 +108,13 @@ class ManageAccountsController extends Controller
     public function destroy($id)
     {
         //
+        $account = User::findorfail($id);
+        $account->forceDelete();
+
+        return back()->with('success', 'User deleted!');
     }
+
+
+
+
 }

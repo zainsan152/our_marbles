@@ -2,24 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ManageAccountsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AdminAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_18_064950_create_roles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/Saccounts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/accounts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DropdownController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/manageOrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/manageShopkeeperController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_26_053141_create_country_state_city_tables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/background2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/1IBGNqeiP9vFGMHqLqmdH8pFhtFpW5nthOKTdapR.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/OnvNt94L0KGOzRHHKJ8QQmiEfVmTI06WoHUfSVVP.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/ZjP8zfKkheIspyUaLgz6WlTen6Kw4KjqxyIK62xB.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/bK04ZQMedCqvr3VYA5yQT2lr7UMkhI4AtraHdW2Q.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/k1ws2XYKE5c6vbWkDTzsNqiE53hnQiB0XnItqW0G.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/wwH9tAJ33jrtBWqL4ArWYaCxA89PccKn8HhMBSRs.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/drop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Shopkeeper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Shopkeeper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_26_105958_create_shopkeepers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_26_105958_create_shopkeepers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_21_100549_create_profiles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_18_065047_create_profiles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/AdminUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LiveSearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LiveSearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ManageAccountsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ManageAccountsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/manageCustomersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/manageCustomersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/managerOrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/managerOrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_08_042622_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_08_042622_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_09_102708_create_customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_09_102708_create_customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ourmarbles.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assetsss/css/creative.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assetsss/css/creative.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/Saccounts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/Saccounts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/accounts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/accounts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/live_search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/live_search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/categories/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/customer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/customer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/products/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -159,8 +181,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -169,11 +192,11 @@
       <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\admin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp1\htdocs\ourmarbles\public\images" />
       <recent name="F:\xampp1\htdocs\ourmarbles" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\assets\fonts" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\js" />
       <recent name="F:\xampp1\htdocs\ourmarbles\public\css" />
-      <recent name="F:\xampp1\htdocs\ourmarbles\braintree_php_example" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -277,7 +300,13 @@
       <workItem from="1576557275711" duration="195000" />
       <workItem from="1576559371946" duration="7243000" />
       <workItem from="1576574290941" duration="1167000" />
-      <workItem from="1576651230771" duration="6891000" />
+      <workItem from="1576651230771" duration="7476000" />
+      <workItem from="1576730346500" duration="4731000" />
+      <workItem from="1576736699515" duration="215000" />
+      <workItem from="1577210042303" duration="1847000" />
+      <workItem from="1577275392854" duration="3020000" />
+      <workItem from="1577337951289" duration="662000" />
+      <workItem from="1577365129071" duration="9338000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1574335760150</created>
