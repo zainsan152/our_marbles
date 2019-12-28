@@ -2,40 +2,47 @@
 
 namespace App\Http\Controllers;
 
-use App\Customer;
-use App\Order;
-use App\Shopkeeper;
+use App\Mail\Letter;
 use Illuminate\Http\Request;
-use App\User;
-use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
 
 
-
-class ManageAccountsController extends Controller
+class LetterController extends Controller
 {
-   /* public function __construct()
-    {
-        $this->middleware('auth:admin');
-    }*/
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         //
-        $users = User::all();
-        return view('admin.accounts', compact('users'));
+        return view('partials.letter');
     }
 
-   
-    public function Sindex()
+    function send(Request $request)
     {
-        //
-        $shopkeepers = Shopkeeper::all();
-        return view('admin.Saccounts', compact('shopkeepers'));
+        $this->validate($request, [
+
+            'email'  =>  'required|email',
+
+        ]);
+
+        $data = array(
+
+            'email'     =>  $request->email,
+
+        );
+
+        Mail::to('info@ourmarbles.com')->send(new Letter($data));
+        return back()->with('success', 'Thanks for contacting us!');
+
     }
 
     /**
@@ -93,36 +100,6 @@ class ManageAccountsController extends Controller
         //
     }
 
-
-     public function trash()
-    {
-        $users = User::onlyTrashed()->paginate(3);
-        return view('admin.accounts', compact('users'));
-    }
-
-    public function DeactivateUser(User $user)
-    {
-        if($user->delete()){
-            return back()->with('message','User Successfully DeActivated!');
-        }else{
-            return back()->with('message','Error DeActivate');
-        }
-    }
-
-
-    public function ActivateUser($id)
-    {
-        $user = User::onlyTrashed()->findOrFail($id);
-        if($user->restore())
-            return back()->with('message','User Successfully Activated!');
-        else
-            return back()->with('message','Error Activate');
-    }
-
-
-
-     
-
     /**
      * Remove the specified resource from storage.
      *
@@ -132,15 +109,5 @@ class ManageAccountsController extends Controller
     public function destroy($id)
     {
         //
-        $account = User::findorfail($id);
-        $account->forceDelete();
-
-        return back()->with('success', 'User deleted!');
     }
-
-
-
-
-
-
 }

@@ -37,6 +37,9 @@ Route::post('/calculate' , 'CalculatorController@predictor')->name('calculate');
 Route::get('/contact' , 'ContactController@index')->name('contact');
 Route::post('/contact/send', 'ContactController@send');
 
+Route::get('/letter' , 'LetterController@index')->name('letter');
+Route::post('/letter/send', 'LetterController@send');
+
 Route::get('/about' , 'AboutController@index')->name('about');
 
 
@@ -97,7 +100,12 @@ Route::prefix('admin')->group(function()
 
     Route::get('/users', 'manageAccountsController@index')->name('admin.accounts');
 
+     Route::get('users/{user}/remove', 'ManageAccountsController@DeactivateUser')->name('user.deactivate');
+    Route::get('users/trash', 'ManageAccountsController@trash')->name('product.trash');
+    Route::get('users/recover/{id}', 'ManageAccountsController@ActivateUser')->name('user.activate');
+
     Route::get('/shop_user', 'manageShopkeeperController@index')->name('admin.Saccounts');
+
 });
 
 Route::prefix('shopkeeper')->group(function()

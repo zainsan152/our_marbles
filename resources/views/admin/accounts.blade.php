@@ -42,14 +42,18 @@
         <td><img src = {{asset($user->avatar)}}></td>
         <td>{{$user->status}}</td>
         <td>{{$user->created_at}}</td>
-        <td><a class="btn btn-outline-success btn-sm" href="#">Activate</a> |
-        <a class="btn btn-outline-danger btn-sm" href="#">Deactivate</a> |
+        @if($users->trashed())
+        <td><a class="btn btn-outline-success btn-sm" href="{{ route('user.activate' , $user->id) }}">Activate</a></td>
+            @else
+            <td>
+        <a class="btn btn-outline-danger btn-sm" href="{{ route('user.deactivate' , $user->id) }}">Deactivate</a> |
         <form action="{{ route('users.destroy', $user->id)}}" method="post">
             @csrf
             @method('DELETE')
             <button class="btn btn-danger" type="submit">Delete</button>
         </form>
     </td>
+    @endif
 </tr>
 @endforeach
 @else

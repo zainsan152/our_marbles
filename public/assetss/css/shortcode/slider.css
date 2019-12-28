@@ -57,7 +57,7 @@
     text-transform: uppercase;
 }
 .cr__btn a {
-    background: #c43b68 none repeat scroll 0 0;
+    background: #A37E62  none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-family: Poppins;
@@ -106,7 +106,7 @@
     position: relative;
 }
 .slider__activation__wrap .owl-nav div {
-    background: #c43b68 none repeat scroll 0 0;
+    background: #A37E62  none repeat scroll 0 0;
     border-radius: 100%;
     color: #fff;
     font-size: 17px;
@@ -133,27 +133,27 @@
 .owl-item.active .single__slide.animation__style01 h2{
   -webkit-animation: 800ms ease-in-out 0s normal none 1 running bounceInDown;
           animation: 800ms ease-in-out 0s normal none 1 running bounceInDown;
-} 
+}
 .owl-item.active .single__slide.animation__style01 h1{
   -webkit-animation: 1000ms ease-in-out 0s normal none 1 running zoomInUp;
           animation: 1000ms ease-in-out 0s normal none 1 running zoomInUp;
-} 
+}
 
 .owl-item.active .single__slide.animation__style01 .cr__btn{
   -webkit-animation: 1600ms ease-in-out 0s normal none 1 running bounceInDown;
           animation: 1600ms ease-in-out 0s normal none 1 running bounceInDown;
-} 
+}
 
 
 .owl-item.active .single__slide.animation__style01 p{
   -webkit-animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
           animation: 1200ms ease-in-out 0s normal none 1 running zoomInUp;
-} 
+}
 
 .owl-item.active .single__slide.animation__style01 .slide__thumb{
     -webkit-animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
             animation: 1900ms ease-in-out 0s normal none 1 running bounceInRight;
-} 
+}
 
 
 
@@ -222,4 +222,4 @@
 }
 .slider__activation__wrap--5 .single-slide:focus{
   outline: none;}
-}
+

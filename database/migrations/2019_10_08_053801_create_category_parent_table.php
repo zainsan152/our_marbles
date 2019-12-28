@@ -18,6 +18,7 @@ class CreateCategoryParentTable extends Migration
             $table->unsignedInteger('parent_id');
             $table->unsignedInteger('category_id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
