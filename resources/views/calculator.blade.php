@@ -67,6 +67,7 @@
         </div>
         <script src="{{asset('assetssss/js/jquery.js')}}"></script>
         <script src="{{asset('assetssss/js/bootstrap.min.js')}}"></script>
+        @include('partials.letter')
         @include('partials.footer')
         @include('partials.js')
     </body>

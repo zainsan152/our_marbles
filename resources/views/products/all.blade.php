@@ -115,6 +115,7 @@
             <!-- Start Footer Area -->
             <footer id="htc__footer">
                 <!-- Start Copyright Area -->
+                @include('partials.letter')
                 @include('partials.footer')
                 <!-- End Copyright Area -->
             </footer>
@@ -123,6 +124,7 @@
         <!-- Body main wrapper end -->
         <!-- Placed js at the end of the document so the pages load faster -->
         <!-- jquery latest version -->
+
         @include('partials.js')
     </body>
 </html>

@@ -60,6 +60,7 @@
         </section>
         <footer id="htc__footer">
             <!-- Start Copyright Area -->
+            @include('partials.letter')
             @include('partials.footer')
             <!-- End Copyright Area -->
         </footer>

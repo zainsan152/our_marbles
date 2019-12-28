@@ -81,6 +81,7 @@
             </form>
         </div>
         <br>
+        @include('partials.letter')
         @include('partials.footer')
         @include('partials.js')
     </body>

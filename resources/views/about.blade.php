@@ -26,6 +26,7 @@
                 <a class="linked"  href="#"><i class="iconfont icon_LinkedIn"></i></a>
             </div>
         </section>
+        @include('partials.letter')
         @include('partials.footer')
         @include('partials.js')
     </body>

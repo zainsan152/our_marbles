@@ -105,6 +105,7 @@
     @else
     <p class="alert alert-danger" >No products in the cart<a href="{{route('products.all')}}"> Buy some products" </a></p>
     @endif
+    @include('partials.letter')
     @include('partials.footer')
     @include('partials.js')
 </body>
