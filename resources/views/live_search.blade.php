@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="{{asset('assetsssss/css/bootstrap.min.css')}}">
+
+        <!-- Fonts CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/icofont.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assetsssss/css/Pe-icon-7-stroke.css')}}">
+
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/plugins.css')}}">
+
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/style.css')}}">
+
+        <!-- Modernizer JS -->
+        <script src="{{asset('assetsssss/js/vendor/modernizr-2.8.3.min.js')}}"></script>
         <link rel="icon" type="image/png" href="{{asset('images/logo.png')}}"/>
         <title>Our Marbles</title>
         @include('partials.css')
     </head>
     <body>
         @include('partials.topbar')
-        <br />
+        <div class="breadcrumb-area section-ptb">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="breadcrumb-title">Search Products</h2>
+                        <!-- breadcrumb-list start -->
+                        <ul class="breadcrumb-list">
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                            <li class="breadcrumb-item active">Search</li>
+                        </ul>
+                        <!-- breadcrumb-list end -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container box">
-            <h3 align="center">Search Products</h3><br />
             <div class="panel panel-default">
                 <div class="panel-heading">Search Products by Name OR Price</div>
                 <div class="panel-body">
@@ -22,9 +49,10 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Title</th>
+
+                                    <th><a href="{{route('products.single' , $products)}}">Title</a></th>
                                     <th>Price</th>
-                                    <th>Shopekeeper</th>
+                                    <th>Shopkeeper</th>
                                 </tr>
                             </thead>
                             <tbody>

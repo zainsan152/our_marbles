@@ -28,9 +28,10 @@
             <th>First Name</th>
             <th>Email</th>
             <th>Picture</th>
-            <th> Status </th>
             <th>Date Created</th>
+            <th>Date Deleted</th>
             <th>Actions</th>
+            <th>Delete</th>
         </tr>
     </thead>
     @if($users->count() > 0)
@@ -40,20 +41,28 @@
         <td>{{$user->name}}</td>
         <td>{{$user->email}}</td>
         <td><img src = {{asset($user->avatar)}}></td>
-        <td>{{$user->status}}</td>
         <td>{{$user->created_at}}</td>
-        @if($users->trashed())
-        <td><a class="btn btn-outline-success btn-sm" href="{{ route('user.activate' , $user->id) }}">Activate</a></td>
-            @else
-            <td>
-        <a class="btn btn-outline-danger btn-sm" href="{{ route('user.deactivate' , $user->id) }}">Deactivate</a> |
-        <form action="{{ route('users.destroy', $user->id)}}" method="post">
-            @csrf
-            @method('DELETE')
-            <button class="btn btn-danger" type="submit">Delete</button>
-        </form>
-    </td>
-    @endif
+        @if($user->trashed())
+            <td>{{$user->deleted_at}}</td>
+            <td><a class="btn btn-success btn-sm" href="{{route('user.activate',$user->id)}}">Activate</a></td>
+        <td>
+            <form action="{{ route('users.destroy', $user->id)}}" method="post">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+            </form>
+            </td>
+        @else
+            <td>{{$user->created_at}}</td>
+            <td><a class="btn btn-warning btn-sm" href="{{route('user.deactivate',$user->id)}}">Deactivate</a></td>
+            <td><form action="{{ route('users.destroy', $user->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                </form>
+
+            </td>
+        @endif
 </tr>
 @endforeach
 @else

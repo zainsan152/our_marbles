@@ -19,8 +19,9 @@ class CreateUserDetailsTable extends Migration
             $table->string('street_address');
             $table->string('city');
             $table->string('zip_code');
-            $table->timestamps();
             $table->softDeletes();
+            $table->timestamps();
+
         });
     }
 

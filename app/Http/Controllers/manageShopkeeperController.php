@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Shopkeeper;
 use App\User;
 use Illuminate\Http\Request;
@@ -13,11 +14,53 @@ class manageShopkeeperController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
     public function index()
     {
         //
-        $shopkeepers = Shopkeeper::all();
+        $shopkeepers = Shopkeeper::paginate(5);
         return view('admin.Saccounts', compact('shopkeepers'));
+    }
+
+    public function trash()
+    {
+        $shopkeepers = Shopkeeper::onlyTrashed()->paginate(5);
+        return view('admin.Saccounts' , compact('shopkeepers'));
+    }
+
+    public function Activate($id)
+    {
+        $shopkeeper = Shopkeeper::onlyTrashed()->findOrFail($id);
+        if ($shopkeeper->restore())
+        {
+            return back()->with('message' ,'Shopkeeper activated successfully');
+        }
+        else
+            return back()->with('message' ,'Error ');
+    }
+
+    public function Deactivate(Shopkeeper $shopkeeper)
+    {
+        //
+        if ($shopkeeper->delete())
+        {
+            return back()->with('message' ,'Shopkeeper Deactivated succesfully');
+        }
+        else
+            return back()->with('message' ,'Error ');
+    }
+
+    public function destroy($id)
+    {
+        //
+        $account = Shopkeeper::findorfail($id);
+        $account->forceDelete();
+
+        return back()->with('success', 'Shopkeeper deleted!');
     }
 
     /**
@@ -81,12 +124,5 @@ class manageShopkeeperController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
-        $account = Shopkeeper::findorfail($id);
-        $account->forceDelete();
 
-        return back()->with('success', 'Shopkeeper deleted!');
-    }
 }

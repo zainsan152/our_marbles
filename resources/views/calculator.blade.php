@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html >
     <head>
+        <link rel="stylesheet" href="{{asset('assetsssss/css/bootstrap.min.css')}}">
+
+        <!-- Fonts CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/icofont.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assetsssss/css/Pe-icon-7-stroke.css')}}">
+
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/plugins.css')}}">
+
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/style.css')}}">
+
+        <!-- Modernizer JS -->
+        <script src="{{asset('assetsssss/js/vendor/modernizr-2.8.3.min.js')}}"></script>
         <title>Our Marbles</title>
         <link href="{{asset('assetssss/css/bootstrap.min.css')}}" rel="stylesheet">
         @include('partials.css')
         <link rel="icon" type="image/png" href="{{asset('images/logo.png')}}"/>
     </head>
     <body>
-        <br><br>
+    @include('partials.topbar')
         <div class="row">
             <div class="col-md-12">
-                <h4 class="text-center display-4" >Online Predictor</h4>
+                <div class="breadcrumb-area section-ptb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="breadcrumb-title">Online Predictor</h2>
+                                <!-- breadcrumb-list start -->
+                                <ul class="breadcrumb-list">
+                                    <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                                    <li class="breadcrumb-item active">Online Predictor</li>
+                                </ul>
+                                <!-- breadcrumb-list end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Auth\Notifications\ResetPassword as ResetPasswordNotification;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -10,6 +11,7 @@ use App\Notifications\ShopkeeperResetPasswordNotification;
 
 class Shopkeeper extends Authenticatable
 {
+    use SoftDeletes;
     use Notifiable;
     protected $guard = 'shopkeeper';
     protected $dates = ['deleted_at'];

@@ -27,24 +27,8 @@
                     <li class="nav-item">
                         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                     </li>
-                    <li class="nav-item d-none d-sm-inline-block">
-                        <a href=# class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item d-none d-sm-inline-block">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
                 </ul>
                 <!-- SEARCH FORM -->
-                <form class="form-inline ml-3">
-                    <div class="input-group input-group-sm">
-                        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-navbar" type="submit">
-                            <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
                 <!-- Right navbar links -->
             </nav>
             <!-- /.navbar -->
@@ -73,46 +57,92 @@
                             <!-- Add icons to the links using the .nav-icon class
                             with font-awesome or any other icon font library -->
                             <li class="nav-item has-treeview menu-open">
-                                <a href="{{route('admin.dashboard')}}" class="nav-link active">
+                                <a href="{{route('admin.design')}}" class="nav-link active">
                                     {{--<i class="nav-icon fas fa-tachometer-alt"></i>--}}
                                     <p>
-                                        Dashboard
+                                        Design Request
                                     </p>
                                 </a>
                             </li>
+
                             <li class="nav-item has-treeview menu-open">
-                                <a href="{{route('admin.accounts')}}" class="nav-link active">
-                                    {{--<i class="fa fa-btn fa-sign-out"></i>--}}
+                                <a href="#" class="nav-link active">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
                                     <p>
                                         Users
+                                        <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{route('admin.accounts')}}" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Activated Users</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{route('user.trash')}}" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Deactivated Users</p>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item has-treeview menu-open">
-                                <a href="{{route('admin.Saccounts')}}" class="nav-link active">
-                                    {{--<i class="fa fa-btn fa-sign-out"></i>--}}
+                                <a href="#" class="nav-link active">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
                                     <p>
                                         Shopkeepers
+                                        <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{route('admin.Saccounts')}}" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Activated Shopkeepers</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{route('shopkeeper.trash')}}" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Deactivated Shopkeepers</p>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item has-treeview menu-open">
-                                <a href="{{route('admin.password.change')}}" class="nav-link active">
-                                    {{--<i class="fa fa-btn fa-user"></i>--}}
+                                <a href="#" class="nav-link active">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
                                     <p>
-                                        Change Password
-                                        {{--<i class="right fas fa-angle-left"></i>--}}
+                                        Profile
+                                        <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{route('admin.password.change')}}" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Change Password</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="{{route('admin.logout')}}" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Logout</p>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="nav-item has-treeview menu-open">
-                                <a href="{{route('admin.logout')}}" class="nav-link active">
-                                    {{--<i class="fa fa-btn fa-sign-out"></i>--}}
-                                    <p>
-                                        Logout
-                                    </p>
-                                </a>
-                            </li>
+
+
+
                         </ul>
                     </nav>
                 </div>

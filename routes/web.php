@@ -42,6 +42,8 @@ Route::post('/letter/send', 'LetterController@send');
 
 Route::get('/about' , 'AboutController@index')->name('about');
 
+Route::get('/design' , 'DesignController@index')->name('design');
+
 
 
 
@@ -74,6 +76,8 @@ Route::group(['as' => 'cart.' , 'prefix' => 'cart'], function ()
 });
 
 
+
+
 Route::get('/change-password' , 'Auth\ChangePasswordController@index')->name('password.change');
 Route::post('change-password' , 'Auth\ChangePasswordController@changePassword')->name('password.update');
 Route::get('/users/logout' , 'Auth\LoginController@logout')->name('user.logout');
@@ -88,6 +92,9 @@ Route::prefix('admin')->group(function()
     Route::post('/login' , 'Auth\AdminLoginController@login')->name('admin.login.submit');
     Route::get('/', 'AdminController@index')->name('admin.dashboard');
 
+   /* Route::get('/', 'AdminController@indexE')->name('events.index');*/
+    Route::post('/events', 'AdminController@addEvent')->name('events.add');
+
     Route::get('/change-password' , 'Auth\AdminChangePasswordController@index')->name('admin.password.change');
     Route::post('change-password' , 'Auth\AdminChangePasswordController@changePassword')->name('admin.password.update');
 
@@ -101,10 +108,16 @@ Route::prefix('admin')->group(function()
     Route::get('/users', 'manageAccountsController@index')->name('admin.accounts');
 
      Route::get('users/{user}/remove', 'ManageAccountsController@DeactivateUser')->name('user.deactivate');
-    Route::get('users/trash', 'ManageAccountsController@trash')->name('product.trash');
-    Route::get('users/recover/{id}', 'ManageAccountsController@ActivateUser')->name('user.activate');
+    Route::get('users/trash', 'ManageAccountsController@trash')->name('user.trash');
+    Route::get('users/activate/{id}', 'ManageAccountsController@ActivateUser')->name('user.activate');
+
+    Route::get('shop_user/{shopkeeper}/remove', 'manageShopkeeperController@Deactivate')->name('shopkeeper.deactivate');
+    Route::get('shop_user/trash', 'manageShopkeeperController@trash')->name('shopkeeper.trash');
+    Route::get('shop_user/activate/{id}', 'manageShopkeeperController@Activate')->name('shopkeeper.activate');
 
     Route::get('/shop_user', 'manageShopkeeperController@index')->name('admin.Saccounts');
+
+    Route::get('/design', 'AdminDesignController@index')->name('admin.design');
 
 });
 
@@ -154,5 +167,7 @@ Route::prefix('shopkeeper')->group(function()
     Route::resource('orders' , 'managerOrdersController');
     Route::resource('users' , 'manageAccountsController');
     Route::resource('shopkeepers' , 'manageShopkeeperController');
+    Route::resource('design' , 'DesignController');
+    //Route::resource('/design' , 'AdminDesignController');
 });
 

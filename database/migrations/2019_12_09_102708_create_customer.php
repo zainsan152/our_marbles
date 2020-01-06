@@ -25,8 +25,9 @@ class CreateCustomer extends Migration
             $table->string("billing_state");
             $table->string("billing_city");
             $table->string("billing_zip");
-            $table->timestamps();
             $table->softDeletes();
+            $table->timestamps();
+
         });
     }
 

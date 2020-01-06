@@ -36,12 +36,14 @@
             </tr>
         </thead>
         <tbody>
+
             @if($products->count() > 0)
             @foreach($products as $product)
+                @if(Auth::check() && Auth::user()->id === $product->id)
             <tr>
                 <td>{{$product->id}}</td>
                 <td>{{$product->title}}</td>
-                <td>{!! $product->description !!}</td>
+                <td>{!! $product->shopkeeper !!}</td>
                 <td>
                     @if($product->categories()->count() > 0)
                     @foreach($product->categories as $children)
@@ -52,7 +54,7 @@
                     @endif
                 </td>
                 <td>Rs{{$product->price}}</td>
-                <td><img src="{{asset('uploads/'.$product->thumbnail)}}" alt="{{$product->title}}" class="img-responsive" height="50"/></td>
+                <td><img src="{{asset('uploads/'.$product->thumbnail)}}" alt="{{$product->title}}" class="img-responsive" height="300px" width="300px"/></td>
                 @if($product->trashed())
                 <td>{{$product->deleted_at}}</td>
                 <td><a class="btn btn-info btn-sm" href="{{route('product.recover',$product->id)}}">Restore</a> | <a class="btn btn-danger btn-sm" href="javascript:;" onclick="confirmDelete('{{$product->id}}')">Delete</a>
@@ -72,7 +74,9 @@
             </form>
         </td>
         @endif
+
     </tr>
+            @endif
     @endforeach
     @else
     <tr>

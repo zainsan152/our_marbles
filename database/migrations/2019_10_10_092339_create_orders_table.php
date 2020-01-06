@@ -22,8 +22,9 @@ class CreateOrdersTable extends Migration
             $table->string('status');
             $table->unsignedInteger('price');
             $table->unsignedInteger('payment_id');
-            $table->timestamps();
             $table->softDeletes();
+            $table->timestamps();
+
         });
     }
 

@@ -20,9 +20,10 @@ class CreateAdminsTable extends Migration
             $table->string('avatar')->default('/images/4.png');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->softDeletes();
             $table->rememberToken();
             $table->timestamps();
-            $table->softDeletes();
+
         });
     }
 

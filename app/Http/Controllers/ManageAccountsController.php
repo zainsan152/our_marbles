@@ -23,20 +23,25 @@ class ManageAccountsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
     public function index()
     {
         //
-        $users = User::all();
+        $users = User::paginate(5);
         return view('admin.accounts', compact('users'));
     }
 
-   
-    public function Sindex()
+
+   /* public function Sindex()
     {
         //
         $shopkeepers = Shopkeeper::all();
         return view('admin.Saccounts', compact('shopkeepers'));
-    }
+    }*/
 
     /**
      * Show the form for creating a new resource.
@@ -121,7 +126,7 @@ class ManageAccountsController extends Controller
 
 
 
-     
+
 
     /**
      * Remove the specified resource from storage.

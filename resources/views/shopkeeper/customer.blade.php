@@ -34,6 +34,7 @@
     </thead>
     @if($customers->count() > 0)
     @foreach($customers as $customer)
+            @if(Auth::check() && Auth::user()->id === $customer->id)
     <tr>
         <td>{{$customer->id}}</td>
         <td>{{$customer->billing_firstName}}</td>
@@ -48,6 +49,7 @@
             </form>
         </td>
     </tr>
+            @endif
     @endforeach
     @else
     <tr>

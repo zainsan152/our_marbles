@@ -30,6 +30,8 @@
             <th>Picture</th>
             <th>Date Created</th>
             <th>Actions</th>
+            <th>Delete</th>
+            <th>Deactivate Users</th>
         </tr>
     </thead>
     @if($shopkeepers->count() > 0)
@@ -38,16 +40,30 @@
         <td>{{$shopkeeper->id}}</td>
         <td>{{$shopkeeper->name}}</td>
         <td>{{$shopkeeper->email}}</td>
-        <td>{{$shopkeeper->avatar}}</td>
-        <td>{{$shopkeeper->created_at}}</td>
-        <td><a class="btn btn-outline-success btn-sm" href="#">Activate</a> |
-        <a class="btn btn-outline-danger btn-sm" href="#">Deactivate</a> |
-        <form action="{{ route('shopkeepers.destroy', $shopkeeper->id)}}" method="post">
-            @csrf
-            @method('DELETE')
-            <button class="btn btn-danger" type="submit">Delete</button>
-        </form>
-    </td>
+        <td><img src = {{asset($shopkeeper->avatar)}}></td>
+        @if($shopkeeper->trashed())
+        <td>{{$shopkeeper->deleted_at}}</td>
+            <td><a class="btn btn-success btn-sm" href="{{route('shopkeeper.activate',$shopkeeper->id)}}">Activate</a></td>
+            <td><form action="{{ route('shopkeepers.destroy', $shopkeeper->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                </form>
+
+            </td>
+            <td><a class="btn btn-info btn-sm" href="{{route('shopkeeper.trash')}}" >Activate Users</a></td>
+            @else
+            <td>{{$shopkeeper->created_at}}</td>
+            <td><a class="btn btn-outline-danger btn-sm" href="{{route('shopkeeper.deactivate',$shopkeeper->id)}}">Deactivate</a></td>
+                <td><form action="{{ route('shopkeepers.destroy', $shopkeeper->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                </form>
+
+            </td>
+            <td><a class="btn btn-info btn-sm" href="{{route('shopkeeper.trash')}}" >Deactivate Users</a></td>
+            @endif
 </tr>
 @endforeach
 @else
@@ -60,6 +76,7 @@
 </div>
 <div class="row">
 <div class="col-md-12">
+    {{$shopkeepers->links()}}
 </div>
 </div>
 @endsection

@@ -7,12 +7,42 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="icon" type="image/png" href="{{asset('images/logo.png')}}"/>
         <title>Our Marbles</title>
+        <link rel="stylesheet" href="{{asset('assetsssss/css/bootstrap.min.css')}}">
+
+        <!-- Fonts CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/icofont.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assetsssss/css/Pe-icon-7-stroke.css')}}">
+
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/plugins.css')}}">
+
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/style.css')}}">
+
+        <!-- Modernizer JS -->
+        <script src="{{asset('assetsssss/js/vendor/modernizr-2.8.3.min.js')}}"></script>
         @include('partials.css')
     </head>
     <body>
+
         <header id="htc__header" class="htc__header__area header--one">
             <!-- Start Mainmenu Area -->
             @include('partials.topbar')
+            <div class="breadcrumb-area section-ptb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="breadcrumb-title">Products</h2>
+                            <!-- breadcrumb-list start -->
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                                <li class="breadcrumb-item active">Products</li>
+                            </ul>
+                            <!-- breadcrumb-list end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- End Mainmenu Area -->
         </header>
         <section class="htc__product__details bg__white ptb--100">

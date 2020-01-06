@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="{{asset('assetsssss/css/bootstrap.min.css')}}">
+
+        <!-- Fonts CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/icofont.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assetsssss/css/Pe-icon-7-stroke.css')}}">
+
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/plugins.css')}}">
+
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/style.css')}}">
+
+        <!-- Modernizer JS -->
+        <script src="{{asset('assetsssss/js/vendor/modernizr-2.8.3.min.js')}}"></script>
         <meta charset="UTF-8">
         <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -11,6 +25,21 @@
     </head>
     <body>
         @include('partials.topbar')
+        <div class="breadcrumb-area section-ptb">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="breadcrumb-title">Cart</h2>
+                        <!-- breadcrumb-list start -->
+                        <ul class="breadcrumb-list">
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                            <li class="breadcrumb-item active">Cart</li>
+                        </ul>
+                        <!-- breadcrumb-list end -->
+                    </div>
+                </div>
+            </div>
+        </div>
         @if(isset($cart) && $cart->getContents())
         <div class="cart-main-area ptb--100 bg__white">
             <div class="container">

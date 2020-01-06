@@ -4,6 +4,20 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Our Marbles</title>
+        <link rel="stylesheet" href="{{asset('assetsssss/css/bootstrap.min.css')}}">
+
+        <!-- Fonts CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/icofont.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assetsssss/css/Pe-icon-7-stroke.css')}}">
+
+        <!-- Plugins CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/plugins.css')}}">
+
+        <!-- Main Style CSS -->
+        <link rel="stylesheet" href="{{asset('assetsssss/css/style.css')}}">
+
+        <!-- Modernizer JS -->
+        <script src="{{asset('assetsssss/js/vendor/modernizr-2.8.3.min.js')}}"></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="{{asset('images/logo.png')}}"/>
@@ -20,46 +34,22 @@
                 <!-- End Mainmenu Area -->
             </header>
             <!-- End Header Area -->
-            <div class="body__overlay"></div>
+
             <!-- Start Offset Wrapper -->
-            <div class="offset__wrapper">
-                <!-- Start Search Popap -->
-                <div class="search__area">
-                    <div class="container" >
-                        <div class="row" >
-                            <div class="col-md-12" >
-                                <div class="search__inner">
-                                    <form action="#" method="get">
-                                        <input placeholder="Search here... " type="text">
-                                        <button type="submit"></button>
-                                    </form>
-                                    <div class="search__close__btn">
-                                        <span class="search__close__btn_icon"><i class="zmdi zmdi-close"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Search Popap -->
-                <!-- Start Cart Panel -->
-                <!-- End Cart Panel -->
-            </div>
+
             <!-- End Offset Wrapper -->
             <!-- Start Bradcaump area -->
-            <div class="ht__bradcaump__area" style="background: rgba(0, 0, 0, 0) url('{{asset('assetss/images/bg/1.jpg')}}')  no-repeat scroll center center / cover ;">
-                <div class="ht__bradcaump__wrap">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="bradcaump__inner">
-                                    <nav class="bradcaump-inner">
-                                        <a class="breadcrumb-item" href="#">Home</a>
-                                        <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i></span>
-                                        <span class="breadcrumb-item active">Products</span>
-                                    </nav>
-                                </div>
-                            </div>
+            <div class="breadcrumb-area section-ptb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="breadcrumb-title">Products</h2>
+                            <!-- breadcrumb-list start -->
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                                <li class="breadcrumb-item active">Products</li>
+                            </ul>
+                            <!-- breadcrumb-list end -->
                         </div>
                     </div>
                 </div>
