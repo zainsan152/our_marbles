@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -37,10 +38,31 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout' , 'userLogout');
     }
+
+    /*public function login(Request $request)
+    {
+        //return true;
+        $this->validate($request, [
+            'email' =>'required|email',
+            'password' => 'required|min:6',
+        ]);
+
+        if (Auth::guard('web')->attempt(['email' => $request->email, 'password' => $request->password] , $request->remember))
+        {
+            return redirect()->intended(route('home'));
+        }
+        else {
+            return redirect('/login')->with('login', 'You have been deactivated by the Admin! Please contact your Admin.');
+        }
+
+        return redirect()->back()->withInput($request->only('email' , 'remember'));
+
+    }*/
     public function userLogout()
     {
         Auth::guard('web')->logout();
         return redirect('/');
+
 
 
     }

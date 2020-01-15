@@ -39,7 +39,7 @@
 
             @if($products->count() > 0)
             @foreach($products as $product)
-                @if(Auth::check() && Auth::user()->id === $product->id)
+                @if(Auth::check() && Auth::user()->name === $product->shopkeeper)
             <tr>
                 <td>{{$product->id}}</td>
                 <td>{{$product->title}}</td>

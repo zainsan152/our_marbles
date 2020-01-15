@@ -28,6 +28,11 @@
         <!--===============================================================================================-->
     </head>
     <div class="limiter">
+        @if(\Session::has('login'))
+            <div class="alert alert-danger">
+                <p>{{ \Session::get('login') }}</p>
+            </div>
+        @endif
         @if (session('status'))
         <p class="alert alert-success">{{ session('session') }}</p>
         @endif

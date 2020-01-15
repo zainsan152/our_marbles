@@ -72,7 +72,7 @@
                                 <ul class="pro__prize">
                                     <li>Rs {{$product->price}}</li>
                                 </ul>
-                                <p class="pro__info">{{$product->description}}</p>
+                                <p class="pro__info">{{$product->shopkeeper}}</p>
                                 <div class="ht__pro__desc">
                                     <div class="sin__desc">
                                         <p><span>Availability:</span> In Stock</p>

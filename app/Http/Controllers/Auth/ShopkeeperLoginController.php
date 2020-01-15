@@ -31,8 +31,16 @@ class ShopkeeperLoginController extends Controller
         {
             return redirect()->intended(route('shopkeeper.dashboard'));
         }
+        else {
+            return redirect('shopkeeper/login')->with('login', 'You have been deactivated by the Admin! Please contact your Admin.');
+        }
+
         return redirect()->back()->withInput($request->only('email' , 'remember'));
+
     }
+
+
+
     public function logout()
     {
         Auth::guard('shopkeeper')->logout();

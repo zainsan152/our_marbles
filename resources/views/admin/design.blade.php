@@ -49,7 +49,7 @@
                 @endforeach
             @else
                 <tr>
-                    <td colspan="8" class="alert alert-info">No users Found..</td>
+                    <td colspan="8" class="alert alert-info">No design Found..</td>
                 </tr>
                 @endif
                 </tbody>
@@ -60,11 +60,4 @@
         </div>
     </div>
 @endsection
-<script type="text/javascript">
-    function confirmDelete(id){
-        let choice = confirm("Are You sure, You want to Delete this Order ?")
-        if(choice){
-            document.getElementById('delete-product-'+id).submit();
-        }
-    }
-</script>
+

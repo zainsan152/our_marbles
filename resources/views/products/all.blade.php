@@ -83,7 +83,8 @@
                                                         </ul>
                                                     </div>
                                                     <div class="fr__product__inner">
-                                                        <h4><a href="product-details.html">{{$product -> title}}</a></h4>
+                                                        <h4><a href="#">{{$product -> title}}</a></h4>
+														<h4><a href="#">{{$product -> shopkeeper}}</a></h4>
                                                         <ul class="fr__pro__prize">
                                                             <li>Rs {{$product->price}}</li>
                                                         </ul>

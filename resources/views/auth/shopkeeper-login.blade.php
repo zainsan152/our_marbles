@@ -28,7 +28,15 @@
         <!--===============================================================================================-->
     </head>
     <body>
+
+
+
         <div class="limiter">
+            @if(\Session::has('login'))
+                <div class="alert alert-danger">
+                    <p>{{ \Session::get('login') }}</p>
+                </div>
+            @endif
             <div class="container-login100">
                 <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
                     <form class="login100-form validate-form flex-sb flex-w" method="POST" action="{{ route('shopkeeper.login.submit') }}">
@@ -90,6 +98,7 @@
                     </div>--}}
                 </form>
             </div>
+
         </div>
     </div>
     <!--===============================================================================================-->
