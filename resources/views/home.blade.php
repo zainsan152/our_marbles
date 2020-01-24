@@ -83,14 +83,11 @@
                         <div class="category">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <img src="{{asset('assetss/images/product/s.jpg')}}" alt="product images">
+                                    <img src="{{asset('assetss/images/product/gilgit white.jpg')}}" alt="product images" style="height:250px; width:250px;">
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4>Magic Gel Onyx MArbles</h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize"> Rs30</li>
-                                        <li>Rs 25</li>
-                                    </ul>
+                                    <h4>Gilgit White</h4>
+
                                 </div>
                             </div>
                         </div>
@@ -101,15 +98,12 @@
                         <div class="category">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <img src="{{asset('assetss/images/product/a.jpg')}}" alt="product images">
+                                    <img src="{{asset('assetss/images/product/tavera marble.jpg')}}" alt="product images" style="height:250px; width:250px;">
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4>Marseilees Chablis Ceramic Tile
+                                    <h4>Tvera
                                     </h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize"> Rs30</li>
-                                        <li>Rs 25</li>
-                                    </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -120,14 +114,11 @@
                         <div class="category">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <img src="{{asset('assetss/images/product/d.jpg')}}" alt="product images">
+                                    <img src="{{asset('assetss/images/product/golden marble.jpg')}}" alt="product images" style="height:250px; width:250px;">
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4>Bronx</h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize"> Rs30</li>
-                                        <li>Rs 25</li>
-                                    </ul>
+                                    <h4>Golden Marble</h4>
+
                                 </div>
                             </div>
                         </div>
@@ -138,14 +129,11 @@
                         <div class="category">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <img src="{{asset('assetss/images/product/f.jpg')}}" alt="product images">
+                                    <img src="{{asset('assetss/images/product/green marble.jpg')}}" alt="product images" style="height:250px; width:250px;">
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4>Polished Marble Tiles </h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize"> Rs30</li>
-                                        <li>Rs 25</li>
-                                    </ul>
+                                    <h4>Green Marble</h4>
+
                                 </div>
                             </div>
                         </div>
@@ -156,14 +144,11 @@
                         <div class="category">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <img src="{{asset('assetss/images/product/s.jpg')}}" alt="product images">
+                                    <img src="{{asset('assetss/images/product/ice filt.jpg')}}" alt="product images" style="height:250px; width:250px;">
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4>Magic Gel Onyx MArbles</h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize"> Rs30</li>
-                                        <li>Rs 25</li>
-                                    </ul>
+                                    <h4>Ice Filt</h4>
+
                                 </div>
                             </div>
                         </div>
@@ -174,15 +159,12 @@
                         <div class="category">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <img src="{{asset('assetss/images/product/a.jpg')}}" alt="product images">
+                                    <img src="{{asset('assetss/images/product/indian galaxy.jpg')}}" alt="product images" style="height:250px; width:250px;">
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4>Marseilees Chablis Ceramic Tile
+                                    <h4>Indian Galaxy
                                     </h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize"> Rs30</li>
-                                        <li>Rs 25</li>
-                                    </ul>
+
                                 </div>
                             </div>
                         </div>
@@ -193,14 +175,11 @@
                         <div class="category">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <img src="{{asset('assetss/images/product/d.jpg')}}" alt="product images">
+                                    <img src="{{asset('assetss/images/product/jet black.jpg')}}" alt="product images" style="height:250px; width:250px;">
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4>Bronx</h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize"> Rs30</li>
-                                        <li>Rs 25</li>
-                                    </ul>
+                                    <h4>Jet Black</h4>
+
                                 </div>
                             </div>
                         </div>
@@ -211,14 +190,11 @@
                         <div class="category">
                             <div class="category">
                                 <div class="ht__cat__thumb">
-                                    <img src="{{asset('assetss/images/product/f.jpg')}}" alt="product images">
+                                    <img src="{{asset('assetss/images/product/juparana.jpg')}}" alt="product images" style="height:250px; width:250px;">
                                 </div>
                                 <div class="fr__product__inner">
-                                    <h4>Polished Marble Tiles </h4>
-                                    <ul class="fr__pro__prize">
-                                        <li class="old__prize"> Rs30</li>
-                                        <li>Rs 25</li>
-                                    </ul>
+                                    <h4>Juparana Granite </h4>
+
                                 </div>
                             </div>
                         </div>
@@ -243,7 +219,7 @@
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                 <div class="prize__inner">
                     <div class="prize__thumb">
-                        <img src="{{asset('images/694x262.png')}}" alt="banner images">
+                        <img src="{{asset('assetss/images/product/cal1.png')}}" alt="banner images">
                     </div>
 
                 </div>
@@ -269,15 +245,12 @@
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                         <div class="category">
                             <div class="ht__cat__thumb">
-                                <img src="{{asset('assetss/images/product/a.jpg')}}" alt="product images">
+                                <img src="{{asset('assetss/images/product/olympus gold.jpg')}}" alt="product images" style="height:250px; width:250px;">
                             </div>
                             <div class="fr__product__inner">
-                                <h4>Marseilees Chablis Ceramic Tile
+                                <h4>Olympus Gold
                                 </h4>
-                                <ul class="fr__pro__prize">
-                                    <li class="old__prize"> Rs30</li>
-                                    <li>Rs 25</li>
-                                </ul>
+
                             </div>
                         </div>
                     </div>
@@ -287,14 +260,11 @@
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                         <div class="category">
                             <div class="ht__cat__thumb">
-                                <img src="{{asset('assetss/images/product/s.jpg')}}" alt="product images">
+                                <img src="{{asset('assetss/images/product/red ruby.jpg')}}" alt="product images" style="height:250px; width:250px;">
                             </div>
                             <div class="fr__product__inner">
-                                <h4>Magic Gel Onyx MArbles</h4>
-                                <ul class="fr__pro__prize">
-                                    <li class="old__prize"> Rs30</li>
-                                    <li>Rs 25</li>
-                                </ul>
+                                <h4>Red Ruby</h4>
+
                             </div>
                         </div>
                     </div>
@@ -303,14 +273,11 @@
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                         <div class="category">
                             <div class="ht__cat__thumb">
-                                <img src="{{asset('assetss/images/product/d.jpg')}}" alt="product images">
+                                <img src="{{asset('assetss/images/product/silver pearl.jpg')}}" alt="product images" style="height:250px; width:250px;">
                             </div>
                             <div class="fr__product__inner">
-                                <h4>Bronx</h4>
-                                <ul class="fr__pro__prize">
-                                    <li class="old__prize"> Rs30</li>
-                                    <li>Rs 25</li>
-                                </ul>
+                                <h4>Silver Pearl</h4>
+
                             </div>
                         </div>
                     </div>
@@ -319,14 +286,11 @@
                     <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
                         <div class="category">
                             <div class="ht__cat__thumb">
-                                <img src="{{asset('assetss/images/product/f.jpg')}}" alt="product images">
+                                <img src="{{asset('assetss/images/product/ziarat badal.jpg')}}" alt="product images" style="height:250px; width:250px;">
                             </div>
                             <div class="fr__product__inner">
-                                <h4>Polished Marble Tiles </h4>
-                                <ul class="fr__pro__prize">
-                                    <li class="old__prize"> Rs30</li>
-                                    <li>Rs 25</li>
-                                </ul>
+                                <h4>Ziarat Badal </h4>
+
                             </div>
                         </div>
                     </div>
@@ -349,7 +313,7 @@
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                 <div class="prize__inner">
                     <div class="prize__thumb">
-                        <img src="{{asset('images/694x262.png')}}" alt="banner images">
+                        <img src="{{asset('assetss/images/product/products.png')}}" alt="banner images" >
                     </div>
 
                 </div>

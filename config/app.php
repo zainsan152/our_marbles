@@ -177,6 +177,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Srmklive\PayPal\Providers\PayPalServiceProvider::class,
+
 
     ],
 
@@ -231,6 +233,8 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
         'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
+        'PayPal' => Srmklive\PayPal\Facades\PayPal::class,
+
 
     ],
 

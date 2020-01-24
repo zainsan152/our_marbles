@@ -34,7 +34,7 @@
     </thead>
     @if($customers->count() > 0)
     @foreach($customers as $customer)
-            @if(Auth::check() && Auth::user()->id === $customer->id)
+            
     <tr>
         <td>{{$customer->id}}</td>
         <td>{{$customer->billing_firstName}}</td>
@@ -49,8 +49,8 @@
             </form>
         </td>
     </tr>
-            @endif
-    @endforeach
+           
+		   @endforeach
     @else
     <tr>
         <td colspan="8" class="alert alert-info">No customers Found..</td>

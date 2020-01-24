@@ -40,7 +40,7 @@
         <td>{{$shopkeeper->id}}</td>
         <td>{{$shopkeeper->name}}</td>
         <td>{{$shopkeeper->email}}</td>
-        <td><img src = {{asset($shopkeeper->avatar)}}></td>
+        <td><img src = {{asset($shopkeeper->avatar)}} style="height:100px; width:100px;"></td>
         @if($shopkeeper->trashed())
         <td>{{$shopkeeper->deleted_at}}</td>
             <td><a class="btn btn-success btn-sm" href="{{route('shopkeeper.activate',$shopkeeper->id)}}">Activate</a></td>

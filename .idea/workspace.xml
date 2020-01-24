@@ -2,14 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724bcb48-f29a-4d7b-9b9a-1e962e6bc84f" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/config/paypal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/cal1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/gemstone.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/gilgit white.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/golden marble.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/green marble.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/ice filt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/indian galaxy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/jet black.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/juparana.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/kashmir white.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/olympus gold.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/parlino crystal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/products (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/products.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/red ruby.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/silky black.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/silver pearl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/sunny grey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/tavera marble.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/product/ziarat badal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/slider/fornt-img/cart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetss/images/slider/fornt-img/search.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetsssss/images/team/butt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetsssss/images/team/fahad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assetsssss/images/team/zain.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dist/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/uploads/WY5llvJUqB4spGDD2zM9zh3qvxHvpnrg3OfjWBlo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/products/paypal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ShopkeeperLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ShopkeeperLoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/design.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/shopkeeper-login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/shopkeeper-login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/shopkeeper.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/shopkeeper.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/Saccounts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/Saccounts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/design.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/design.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/live_search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/live_search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/single.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/single.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/customer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/customer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/order.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shopkeeper/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shopkeeper/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,6 +186,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
       <path value="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/srmklive/paypal" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RMr2BaOatdFTVUQpM7wOapWfwt" />
@@ -151,22 +198,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assetss/images/slider/fornt-img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\xampp\htdocs\ourmarbles\public\plugins" />
-      <recent name="F:\xampp\htdocs\ourmarbles\public\about" />
-      <recent name="F:\xampp1\htdocs\ourmarbles\public\images" />
-      <recent name="F:\xampp1\htdocs\ourmarbles\public\assets\bootstrap" />
-      <recent name="F:\xampp1\htdocs\ourmarbles" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\xampp1\htdocs\ourmarbles\public" />
       <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\shopkeeper" />
       <recent name="F:\xampp1\htdocs\ourmarbles\resources\views\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\xampp\htdocs\ourmarbles\public\assetss\images\slider\fornt-img" />
+      <recent name="F:\xampp\htdocs\ourmarbles\public\plugins" />
+      <recent name="F:\xampp\htdocs\ourmarbles\public\about" />
+      <recent name="F:\xampp1\htdocs\ourmarbles\public\images" />
+      <recent name="F:\xampp1\htdocs\ourmarbles\public\assets\bootstrap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -284,6 +331,8 @@
       <workItem from="1578056865022" duration="7173000" />
       <workItem from="1578143462093" duration="5658000" />
       <workItem from="1578286144447" duration="4617000" />
+      <workItem from="1579676252648" duration="16672000" />
+      <workItem from="1579773264986" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1574335760150</created>

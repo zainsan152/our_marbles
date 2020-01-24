@@ -8,6 +8,9 @@ use App\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
+use Srmklive\PayPal\Services\ExpressCheckout;
+use Stripe\Charge;
+use Stripe\Stripe;
 
 class OrderController extends Controller
 {
@@ -96,7 +99,7 @@ class OrderController extends Controller
                 'product_id' => $product['product']->id,
                 'title' => $product['product']->title,
                 'qty' => $product['qty'],
-                'status' => 'pending',
+                'status' => 'done',
                 'price' => $product['price'],
                 'payment_id' => 0,
             ];
@@ -114,6 +117,88 @@ class OrderController extends Controller
             DB::rollback();
             return redirect('checkout')->with('message' , 'Invalid Activity!');
         }
+
+
+
+    }
+
+    public function payment()
+    {
+        return view('products.paypal');
+    }
+    public function storePayment(Request $request)
+    {
+        $cart = [];
+        $order = '';
+        $checkout = '';
+        $error = '';
+        $success = '';
+
+        Stripe::setApiKey('sk_test_p0xuhINNHRf6Birnl92Bb3s700RRJzOEbB');
+        $token = $request->stripeToken;
+
+// Create a charge: this will charge the user's card
+        try {
+            if (Session::has('cart')) {
+                $cart =Session::get('cart');
+                $charge = \Stripe\Charge::create(array(
+                    "amount" =>$cart->getTotalPrice() * 100, // Amount in cents
+                    "currency" => "usd",
+                    "source" => $token,
+                    "description" => "Example charge"
+                ));
+            }
+        } catch (\Stripe\Error\Card $e) {
+            // The card has been declined
+        }
+        //Create the order
+
+
+        //redirect user to some page
+        return redirect('products')->with('message' , 'Your Order successfully processs');
+
+    }
+
+    public function paywithPaypal()
+    {
+        $provider = new ExpressCheckout;
+        $cart = [];
+        $order = '';
+        $checkout = '';
+        $error = '';
+        $success = '';
+        $data = [];
+        $data['items'] = [];
+        if (Session::has('cart'))
+        {
+            $cart =Session::get('cart');
+        }
+        foreach ($cart->getContents() as $id => $product) {
+            $itemDetail = [
+                'name' => $product['product']->title,
+                'qty' => $product['qty'],
+                'price' => $product['price'],
+            ];
+            $data['items'][]=$itemDetail;
+           /* $order = Order::create($itemDetail);*/
+        }
+
+        dd($data);
+
+
+
+
+        $data['invoice_id'] = uniqid();
+        $data['invoice_description'] = "Order Invoice";
+        $data['return_url'] = route('payment.paypalSuccess');
+        $data['cancel_url'] = route('cart.all');
+
+        $total = $itemDetail['price'];
+        $data['total'] = $total;
+
+        $response = $provider->setExpressCheckout($data);
+        // This will redirect user to PayPal
+        return redirect($response['paypal_link']);
 
 
 

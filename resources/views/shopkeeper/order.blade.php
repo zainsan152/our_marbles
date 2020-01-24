@@ -38,7 +38,7 @@
         </thead>
         @if($orders->count() > 0)
         @foreach($orders as $order)
-                @if(Auth::check() && Auth::user()->id === $order->id)
+               
         <tr>
             <td>{{$order->id}}</td>
             <td>{{$order->user_id}}</td>
@@ -56,7 +56,7 @@
                 </form>
             </td>
         </tr>
-                @endif
+                
         @endforeach
         @else
         <tr>

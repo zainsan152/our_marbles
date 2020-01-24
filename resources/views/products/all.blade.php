@@ -33,13 +33,152 @@
                 @include('partials.topbar')
                 <!-- End Mainmenu Area -->
             </header>
+            <div class="slider__container slider--one bg__cat--3">
+                <div class="slide__container slider__activation__wrap owl-carousel">
+                    <!-- Start Single Slide -->
+                    <div class="single__slide animation__style01 slider__fixed--height">
+                        <div class="container">
+                            <div class="row align-items__center">
+                                <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                                    <div class="slide">
+                                        <div class="slider__inner">
+                                            <h2>Our Massive Products</h2>
+                                            <br>
+                                            <h2>By Different</h2>
+                                            <h1>Shops</h1>
+                                            <br>
+                                            <div class="cr__btn">
+                                                <a href="{{route('products.all')}}" style="background-color: #c2a476;">Scroll Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                                    <div class="slide__thumb">
+                                        <img src="{{asset('assetss/images/product/ice filt.jpg')}}" alt="slider images"
+                                        style="height:500px; width: 500px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single__slide animation__style01 slider__fixed--height">
+                        <div class="container">
+                            <div class="row align-items__center">
+                                <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                                    <div class="slide">
+                                        <div class="slider__inner">
+                                            <h2>Our Massive Products</h2>
+                                            <br>
+                                            <h2>By Different</h2>
+                                            <h1>Shops</h1>
+                                            <br>
+                                            <div class="cr__btn">
+                                                <a href="{{route('products.all')}}" style="background-color: #c2a476;">Scroll Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                                    <div class="slide__thumb">
+                                        <img src="{{asset('assetss/images/product/gilgit white.jpg')}}" alt="slider images"
+                                             style="height:500px; width: 500px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single__slide animation__style01 slider__fixed--height">
+                        <div class="container">
+                            <div class="row align-items__center">
+                                <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                                    <div class="slide">
+                                        <div class="slider__inner">
+                                            <h2>Our Massive Products</h2>
+                                            <br>
+                                            <h2>By Different</h2>
+                                            <h1>Shops</h1>
+                                            <br>
+                                            <div class="cr__btn">
+                                                <a href="{{route('products.all')}}" style="background-color: #c2a476;">Scroll Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                                    <div class="slide__thumb">
+                                        <img src="{{asset('assetss/images/product/tavera marble.jpg')}}" alt="slider images"
+                                             style="height:500px; width: 500px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single__slide animation__style01 slider__fixed--height">
+                        <div class="container">
+                            <div class="row align-items__center">
+                                <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                                    <div class="slide">
+                                        <div class="slider__inner">
+                                            <h2>Our Massive Products</h2>
+                                            <br>
+                                            <h2>By Different</h2>
+                                            <h1>Shops</h1>
+                                            <br>
+                                            <div class="cr__btn">
+                                                <a href="{{route('products.all')}}" style="background-color: #c2a476;">Scroll Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                                    <div class="slide__thumb">
+                                        <img src="{{asset('assetss/images/product/golden marble.jpg')}}" alt="slider images"
+                                             style="height:500px; width: 500px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single__slide animation__style01 slider__fixed--height">
+                        <div class="container">
+                            <div class="row align-items__center">
+                                <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                                    <div class="slide">
+                                        <div class="slider__inner">
+                                            <h2>Our Massive Products</h2>
+                                            <br>
+                                            <h2>By Different</h2>
+                                            <h1>Shops</h1>
+                                            <br>
+                                            <div class="cr__btn">
+                                                <a href="{{route('products.all')}}" style="background-color: #c2a476;">Scroll Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                                    <div class="slide__thumb">
+                                        <img src="{{asset('assetss/images/product/green marble.jpg')}}" alt="slider images"
+                                             style="height:500px; width: 500px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Slide -->
+                    <!-- Start Single Slide -->
+
+                    <!-- End Single Slide -->
+                </div>
+            </div>
             <!-- End Header Area -->
 
             <!-- Start Offset Wrapper -->
 
             <!-- End Offset Wrapper -->
             <!-- Start Bradcaump area -->
-            <div class="breadcrumb-area section-ptb">
+           {{-- <div class="breadcrumb-area section-ptb">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -53,7 +192,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--}}
             <!-- End Bradcaump area -->
             <!-- Start Product Grid -->
             <section class="htc__product__grid bg__white ptb--100">
@@ -71,7 +210,7 @@
                                             <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                                                 <div class="category">
                                                     <div class="ht__cat__thumb">
-                                                        <a href="product-details.html">
+                                                        <a href="{{route('products.single' , $product)}}">
                                                             <img class="card-img-top img-thumbnail" src="{{asset('uploads/'.$product->thumbnail)}}" alt="product images"
                                                             style="height: 400px; width: 600px;">
                                                         </a>
@@ -83,14 +222,16 @@
                                                         </ul>
                                                     </div>
                                                     <div class="fr__product__inner">
-                                                        <h4><a href="#">{{$product -> title}}</a></h4>
+                                                        <h4><a href="{{route('products.single' , $product)}}">{{$product -> title}}</a></h4>
 														<h4><a href="#">{{$product -> shopkeeper}}</a></h4>
                                                         <ul class="fr__pro__prize">
-                                                            <li>Rs {{$product->price}}</li>
+                                                            <li>Rs {{$product->price}} per Sq Ft. / Sq Meter</li>
+                                                            <a href="{{route('products.addToCart' , $product)}}"  style="background-color: #c2a476; color: white;"> Add to Cart</a>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
+
                                             @endforeach
                                             <!-- End Single Product -->
                                         </div>

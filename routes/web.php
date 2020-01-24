@@ -54,6 +54,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('checkout' , 'OrderController');
 Route::get('checkout' , 'OrderController@index')->name('checkout');
 
+Route::get('payment', 'PayPalController@payment')->name('payment');
+Route::get('cancel', 'PayPalController@cancel')->name('payment.cancel');
+Route::get('payment/success', 'PayPalController@success')->name('payment.success');
+
+Route::get('payment-status',array('as'=>'payment.status','uses'=>'PaymentController@paymentInfo'));
+Route::get('payment',array('as'=>'payment','uses'=>'PaymentController@payment'));
+Route::get('payment-cancel', function () 
+{
+   return 'Payment has been canceled';
+});
+
+/*Route::get('pay-with-paypal' , 'OrderController@paywithPaypal')->name('payment.paypal');
+Route::get('paypal-Callback' , 'OrderController@paypalSuccess')->name('payment.paypalSuccess');*/
+
 /*Route::get('/dropdownlist','OrderController@getCountryList');
 Route::get('/get-state-list','OrderController@getStateList');
 Route::get('/get-city-list','OrderController@getCityList');*/

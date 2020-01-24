@@ -75,7 +75,7 @@
                         <!-- single-member Start -->
                         <div class="single-team-member mt--30">
                             <div class="team-member-image hover-2">
-                                <img src="{{asset('assetsssss/images/team/01.png')}}" alt="">
+                                <img src="{{asset('assetsssss/images/team/zain.jpg')}}" alt="" style="height:300px; width:370px;">
                                 <div class="team-social-link">
                                     <ul>
                                         <li><a href="#"><i class="icofont-facebook"></i></a></li>
@@ -95,7 +95,7 @@
                         <!-- single-member Start -->
                         <div class="single-team-member mt--30">
                             <div class="team-member-image hover-2">
-                                <img src="{{asset('assetsssss/images/team/02.png')}}" alt="">
+                                <img src="{{asset('assetsssss/images/team/butt.jpg')}}" alt="">
                                 <div class="team-social-link">
                                     <ul>
                                         <li><a href="#"><i class="icofont-facebook"></i></a></li>
@@ -115,7 +115,7 @@
                         <!-- single-member Start -->
                         <div class="single-team-member mt--30">
                             <div class="team-member-image hover-2">
-                                <img src="{{asset('assetsssss/images/team/03.png')}}" alt="">
+                                <img src="{{asset('assetsssss/images/team/fahad.jpg')}}" alt="">
                                 <div class="team-social-link">
                                     <ul>
                                         <li><a href="#"><i class="icofont-facebook"></i></a></li>

@@ -40,8 +40,15 @@
         </div>
     </div>
 </div>
-<div class="row">
-    @if(count($errors) > 0)
+</br>
+
+<div class="col-md-3"> </div>
+
+<div class="row ">
+<div class="col-md-6">
+   
+    <div class="container">
+	 @if(count($errors) > 0)
         <div class="alert alert-danger">
             <ul>
                 @foreach($errors->all() as $error)
@@ -55,23 +62,24 @@
             <p>{{ \Session::get('success') }}</p>
         </div>
     @endif
-    <div class="container">
 <form action="{{route('design.store')}}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="form-group row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
             <label class="form-control-label">Title: </label>
             <input type="text" id="txturl" name="name" class="form-control " value="" />
         </div>
     </div>
     <div class="form-group row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
             <label class="form-control-label">Write Description About Design: </label>
             <textarea name="description" id="editor" class="form-control "></textarea>
         </div>
     </div>
     <div class="form-group row">
         <div class="col-lg-3">
+		<label class="form-control-label">Category: </label>
+		
             <select class="mdb-select md-form" name="category">
                 <option value="" disabled selected>Choose your option</option>
                 <option value="Marbles">Marbles</option>
@@ -81,22 +89,28 @@
         </div>
     </div>
     <div class="form-group row" >
-        <div class="col-lg-12">
+        <div class="col-lg-4">
             <label class="form-control-label">Upload Picture: </label>
             <input type="file" id="image" name="image" class="form-control " value="" />
         </div>
     </div>
     <div class="form-group row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
             <label class="form-control-label">Your Contact: </label>
             <input type="contact"  name="contact" class="form-control " value="" />
         </div>
     </div>
-    <input type="submit" name="submit" class="btn btn-primary btn-block " value="Add Design" />
+    <input type="submit" name="submit" class="btn btn-primary " value="Add Design" />
 </form>
     </div>
+	</div>
     </div>
+
+<div class="col-md-3"> </div>
+</div>
 <br>
+
+
 
 </body>
 @include('partials.letter')

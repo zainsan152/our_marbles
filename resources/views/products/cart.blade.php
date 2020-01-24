@@ -25,7 +25,38 @@
     </head>
     <body>
         @include('partials.topbar')
-        <div class="breadcrumb-area section-ptb">
+        <div class="slider__container slider--one bg__cat--3">
+            <div class="slide__container slider__activation__wrap owl-carousel">
+                <!-- Start Single Slide -->
+                <div class="single__slide animation__style01 slider__fixed--height">
+                    <div class="container">
+                        <div class="row align-items__center">
+                            <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
+                                <div class="slide">
+                                    <div class="slider__inner">
+                                        <h2>Update or Manage your </h2>
+                                        <h1>cart here</h1>
+                                        <div class="cr__btn">
+                                            <a href="{{route('products.all')}}" style="background-color: #c2a476;">Add More Products</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                                <div class="slide__thumb">
+                                    <img src="{{asset('assetss/images/slider/fornt-img/cart.jpg')}}" alt="slider images">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Slide -->
+                <!-- Start Single Slide -->
+
+                <!-- End Single Slide -->
+            </div>
+        </div>
+       {{-- <div class="breadcrumb-area section-ptb">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -39,7 +70,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--}}
         @if(isset($cart) && $cart->getContents())
         <div class="cart-main-area ptb--100 bg__white">
             <div class="container">
@@ -68,7 +99,7 @@
                                     <td class="product-quantity">
                                         <form method="post"action="{{route('cart.update' ,$id)}}">
                                             @csrf
-                                            <input type="number" name="qty" id="qty"  min="0" max="99" value="{{$product['qty']}}">
+                                            <input type="number" name="qty" id="qty"  min="0" value="{{$product['qty']}}">
                                             <input type="submit" name="update" value="Update" class="btn btn-block btn-outline-success btn-round" style=
                                             "margin-top:50px;
                                             border: 1px solid brown;

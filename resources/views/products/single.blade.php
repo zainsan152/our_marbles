@@ -70,7 +70,7 @@
                             <div class="ht__product__dtl">
                                 <h2>{{$product->title}}</h2>
                                 <ul class="pro__prize">
-                                    <li>Rs {{$product->price}}</li>
+                                    <li>Rs {{$product->price}} per Sq Ft. / Sq Meter</li>
                                 </ul>
                                 <p class="pro__info">{{$product->shopkeeper}}</p>
                                 <div class="ht__pro__desc">

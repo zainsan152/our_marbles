@@ -12,9 +12,9 @@
     <body>
         <h2>Checkout Form</h2>
         <div class="row">
-            <div class="col-75">
+            <div class="col-50">
                 <div class="container">
-                    <form class="needs-validation" action="{{route('checkout.store')}}" method="post" novalidate="">
+                    <form class="needs-validation" action="{{route('checkout.store')}}" method="post" id="payment-form"novalidate="">
                         @csrf
                         <div class="row">
                             <div class="col-50">
@@ -36,7 +36,7 @@
                                 </div>
                                 @endif
                                 <br>
-                                <label for="adr"><i class="fa fa-address-card-o"></i>Shipping Address</label>
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Shipping Address</label>
                                 <input type="text" id="billing_address1" name="billing_address1" >
                                 @if($errors->has('billing_address1'))
                                 <div class="alert alert-danger">
@@ -44,7 +44,7 @@
                                 </div>
                                 @endif
                                 <br>
-                                <label for="badr"><i class="fa fa-address-card-o"></i>Billing Address</label>
+                                <label for="badr"><i class="fa fa-address-card-o"></i> Billing Address</label>
                                 <input type="text" id="billing_address2" name="billing_address2" >
                                 @if($errors->has('billing_address2'))
                                 <div class="alert alert-danger">
@@ -94,39 +94,85 @@
                             <input type="checkbox" checked="checked" name="sameadr">
                             Shipping address same as billing
                         </label> -->
+                        <!-- <script src="https://js.stripe.com/v3/"></script>
+                        <div class="form-row">
+                            <label for="card-element">
+                                Credit or debit card
+                            </label>
+                            <div id="card-element">
+                                A Stripe Element will be inserted here.
+                            </div>
+                            Used to display form errors.
+                            <div id="card-errors" role="alert"></div>
+                        </div> -->
                         <button class="btn" type="submit">Checkout</button>
+                        <div id="paypal-button"></div>
+                        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+                        <script>
+                            paypal.Button.render({
+                                env: 'sandbox', // Or 'production'
+                                // Set up the payment:
+                                // 1. Add a payment callback
+                                payment: function(data, actions) {
+                                    // 2. Make a request to your server
+                                    return actions.request.post('/api/create-payment/')
+                                        .then(function(res) {
+                                            // 3. Return res.id from the response
+                                            return res.id;
+                                        });
+                                },
+                                // Execute the payment:
+                                // 1. Add an onAuthorize callback
+                                onAuthorize: function(data, actions) {
+                                    // 2. Make a request to your server
+                                    return actions.request.post('/api/execute-payment/', {
+                                        paymentID: data.paymentID,
+                                        payerID:   data.payerID
+                                    })
+                                        .then(function(res) {
+                                            // 3. Show the buyer a confirmation message.
+                                        });
+                                }
+                            }, '#paypal-button');
+                        </script>
+                        <a href="{{url('payment')}}">Pay with Paypal</a>
                     </form>
                 </div>
             </div>
             <div class="col-25">
                 <div class="container">
                     <div class="order-details">
+                        <h1 class="order-details__title">Your Order Details</h1>
                         @foreach($cart->getContents() as $id => $product)
-                        <h5 class="order-details__title">Your Order</h5>
+
                         <div class="order-details__item">
                             <div class="single-item">
                                 <div class="single-item__thumb">
-                                    <img src="{{asset('uploads/'.$product['product']->thumbnail)}}" alt="ordered item">
+                                    <img src="{{asset('uploads/'.$product['product']->thumbnail)}}" alt="ordered item" style="height: 50px; width: 50px;">
                                 </div>
                                 <div class="single-item__content">
-                                    <a href="#">{{$product['product']->title}}</a>
-                                    <span class="price">{{$product['price']}}</span>
+                                    <h5>{{$product['product']->title}}</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="order-details__count">
                             <div class="order-details__count__single">
-                                <h5>Per Piece</h5>
-                                <span class="price">Rs {{$product['price']}}</span>
+                                <h5>Price</h5>
+                                <span class="price" style="margin-top: -41px;">Rs {{$product['price']}}</span>
                             </div>
                             <div class="order-details__count__single">
+                                <h5>Product Quantity</h5>
+                                <span class="price" style="margin-top: -41px;">{{$product['qty']}}</span>
+                            </div>
+
+                            <div class="order-details__count__single">
                                 <h5>Total Quantity</h5>
-                                <span class="price">{{$cart->getTotalQty()}}</span>
+                                <span class="price" style="margin-top: -41px;">{{$cart->getTotalQty()}}</span>
                             </div>
                         </div>
                         <div class="ordre-details__total">
                             <h5>Order total</h5>
-                            <span class="price">Rs {{$cart->getTotalPrice()}}</span>
+                            <span class="price" style="margin-top: -41px;">Rs {{$cart->getTotalPrice()}}</span>
                         </div>
                         @endforeach
                     </div>
