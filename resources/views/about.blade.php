@@ -74,7 +74,7 @@
                     <div class="col-lg-4 col-md-6">
                         <!-- single-member Start -->
                         <div class="single-team-member mt--30">
-                            <div class="team-member-image hover-2">
+                            {{-- <div class="team-member-image hover-2">
                                 <img src="{{asset('assetsssss/images/team/zain.jpg')}}" alt="" style="height:300px; width:370px;">
                                 <div class="team-social-link">
                                     <ul>
@@ -83,10 +83,10 @@
                                         <li><a href="#"><i class="icofont-pinterest"></i></a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="team-member-info text-center">
-                                <h3>Zain Ul Abideen</h3>
-                                <p>BSEM-F15-152</p>
+                                <h3>Ghulam Jillani</h3>
+                                <p>BSIT-F18-40</p>
                             </div>
                         </div>
                         <!-- single-member End -->
@@ -94,7 +94,7 @@
                     <div class="col-lg-4 col-md-6">
                         <!-- single-member Start -->
                         <div class="single-team-member mt--30">
-                            <div class="team-member-image hover-2">
+                            {{-- <div class="team-member-image hover-2">
                                 <img src="{{asset('assetsssss/images/team/butt.jpg')}}" alt="">
                                 <div class="team-social-link">
                                     <ul>
@@ -103,17 +103,17 @@
                                         <li><a href="#"><i class="icofont-pinterest"></i></a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="team-member-info text-center">
-                                <h3>Shahzaib Butt</h3>
-                                <p>BSEM-F15-179</p>
+                                <h3>Muhammad Usama</h3>
+                                <p>BSIT-F18-28</p>
                             </div>
                         </div>
                         <!-- single-member End -->
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    {{-- <div class="col-lg-4 col-md-6"> --}}
                         <!-- single-member Start -->
-                        <div class="single-team-member mt--30">
+                        {{-- <div class="single-team-member mt--30">
                             <div class="team-member-image hover-2">
                                 <img src="{{asset('assetsssss/images/team/fahad.jpg')}}" alt="">
                                 <div class="team-social-link">
@@ -128,9 +128,9 @@
                                 <h3>Fahad Sattar</h3>
                                 <p>BSEM-S15-057</p>
                             </div>
-                        </div>
+                        </div> --}}
                         <!-- single-member End -->
-                    </div>
+                    {{-- </div> --}}
                 </div>
             </div>
         </div>
